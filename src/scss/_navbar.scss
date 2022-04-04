@@ -23,7 +23,7 @@ nav {
 #menup {
   display: flex;
   .menu {
-    padding-right: 2rem;
+    padding-left: 5rem;
     input {
       display: none;
     }
@@ -44,6 +44,11 @@ nav {
         border-left: solid 0.1rem $color10o;
         border-radius: 1px 1px 1px 1px;
         text-align: center;
+
+        /*  .submenu {
+          position: absolute;
+          top: ;
+        } */
 
         a {
           text-decoration: none;

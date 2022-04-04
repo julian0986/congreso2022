@@ -9,7 +9,7 @@
 section .imgorganiza {
   display: flex;
   justify-content: space-around;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
   background-color: rgba(0, 7, 244, 0.2);
 }
@@ -98,7 +98,7 @@ nav .logo img {
   display: flex;
 }
 #menup .menu {
-  padding-right: 2rem;
+  padding-left: 5rem;
 }
 #menup .menu input {
   display: none;
@@ -120,6 +120,10 @@ nav .logo img {
   border-left: solid 0.1rem rgba(35, 63, 75, 0.2);
   border-radius: 1px 1px 1px 1px;
   text-align: center;
+  /*  .submenu {
+    position: absolute;
+    top: ;
+  } */
 }
 #menup .menu ul li a {
   text-decoration: none;
@@ -261,7 +265,7 @@ header .botonh input {
 section .imgorganiza {
   display: flex;
   justify-content: space-around;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
   background-color: rgba(0, 7, 244, 0.2);
 }
@@ -504,7 +508,7 @@ section .contenidomot .parrafo p .has {
   width: 100%;
   margin: auto;
   overflow: hidden;
-  padding-top: 14vh;
+  padding-top: 12vh;
   background-color: rgba(0, 7, 244, 0.2);
 }
 .slider ul {
