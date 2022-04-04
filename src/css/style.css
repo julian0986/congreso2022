@@ -80,7 +80,7 @@ section .infocongreso .imginfo img {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #00426c;
+  background-color: #fff;
   border-bottom: solid 4px #0080ff;
   top: 0;
   z-index: 100;
@@ -116,14 +116,14 @@ nav .logo img {
   padding-top: 4vh;
   /* font-family: 'Roboto', sans-serif; */
   font-family: "Varela Round", sans-serif;
-  font-size: 0.9rem;
-  border-left: solid 0.1rem #fff;
+  font-size: 0.8rem;
+  border-left: solid 0.1rem rgba(35, 63, 75, 0.2);
   border-radius: 1px 1px 1px 1px;
   text-align: center;
 }
 #menup .menu ul li a {
   text-decoration: none;
-  color: white;
+  color: #000;
 }
 #menup .menu ul :nth-child(5) {
   border-right: solid 0.1rem #fff;
