@@ -1,0 +1,73 @@
+@import "variables";
+@import "reset";
+section{
+    h3{
+        font-family: $fuente1;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .contenidomot{
+        display: flex;
+        padding-bottom: 2rem;
+        
+       .contparrafo{
+           padding: 3rem;
+            align-items: center;
+
+           :nth-child(2){
+               #icon{
+                   padding-bottom: 0rem;
+                   padding-top: 10px;
+               }
+           }
+       }
+
+        .parrafo{
+            display: flex;
+            padding: 2rem;
+
+              .icono{
+               font-size: 2.5rem;
+               color: $color10;
+               padding: 0.8rem;
+               box-shadow: 0px 0px 5px 1px black;
+               border-radius: 10px;
+
+            }
+            p{
+                padding-left: 1rem;
+                font-family: $fuente1;
+
+                .has{
+                    font-size: 0.8rem;
+                }
+
+                
+            }
+            
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+  
+    main{
+        width: 100%;
+        height: auto;
+
+ 
+
+  
+    .contenidomot{
+        flex-direction: column;
+
+        .contparrafo{
+            padding: 0;
+            text-align: justify;
+        }
+      
+    }
+    
+    }
+}

@@ -1,0 +1,205 @@
+@import "variables";
+@import "mainorga";
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: $color10;
+    border-bottom: solid 4px $color2;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+   
+    .logo{
+        img{
+            height: 14vh;
+            width: auto;
+            padding-top: 1vh;
+            padding-left: 3rem;
+        }
+    }
+    
+      
+    }
+
+    #menup{
+        display: flex;
+        .menu{
+            padding-right: 2rem;
+            input{
+                display: none;
+            }
+            label{
+                display: none;
+            }
+            ul{
+                display: flex;
+                padding-top: 1rem;
+    
+                li{
+                    list-style-type: none;
+                    padding: 2vh;
+                    padding-top: 4vh;
+                    /* font-family: 'Roboto', sans-serif; */
+                    font-family: 'Varela Round', sans-serif;
+                    font-size: 0.9rem;
+                    border-left: solid 0.1rem $color0;
+                    border-radius: 1px 1px 1px 1px;
+                    text-align: center;
+                   
+                    
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        
+                        
+                    }
+                
+    
+                }
+    
+    
+                :nth-child(5){
+                    border-right: solid 0.1rem $color0;
+                }
+                li:hover{
+                  background-color: $color4o;
+                  border-bottom: solid 3px $color2;
+                  border-radius: 8px;
+                  transition: ease-in-out 0.4s;
+                  a{
+                    color: $color0;
+                    transition: ease-in-out 0.4s;
+    
+                 
+                  }
+                 
+    
+                }
+              
+               
+            }
+
+         }   
+        #menu{
+            display: flex;
+            list-style-type: none;
+            font-family: 'Varela Round', sans-serif;
+            font-size: 1.3rem;
+            padding: 2rem;
+            text-align: center;
+
+            #ingreso{
+                a{
+                    text-decoration: none;
+                    color: $color0;
+                    border: solid 2px $color0;
+                    padding: 0.7rem;
+                    border-radius: 10px;
+                }
+                :hover{
+                    background-color: $color4o;
+                    border-bottom: solid 3px $color2;
+                    border-radius: 8px;
+                    transition: ease-in-out 0.4s;
+                    color: $color0;
+                  
+                   
+                }
+
+            }
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav{
+        flex-direction: column;
+
+        
+        .logo{
+           text-align: center;
+           padding: 1rem 4rem 1rem 2rem;
+          img{
+              width: 40vh;
+              height: auto;
+              padding: 0;
+          }
+           
+          
+            
+        }
+
+        #menup{
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-top: 1rem;
+        margin-left: 1rem;
+        padding-bottom: 0;
+        align-items: center;
+               
+        :nth-child(2){
+            #menu{
+              align-items: flex-end;
+                padding-bottom: 1rem;
+                #ingreso{
+                    padding-bottom: 0.5rem;
+                }
+            }
+        }
+
+            .menu{
+
+                
+                input:checked ~ ul{
+                    
+                    display: block;
+ 
+                    
+                    
+                }
+                label{
+                    box-sizing: border-box;
+                    display: block;
+                    color: $color0;
+                    border: solid 2px $color0;
+                    border-radius: 10px;
+                    font-size: 2rem;
+                    padding: 0.5rem;
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    user-select: none;
+                   
+                    
+                    
+                    
+
+                }
+                input:checked ~ label{
+                    background-color: gray;
+                    margin: 0;
+                    margin-left: 3rem;
+                    
+                }
+                
+                ul{
+                    display: none;
+                    flex-direction: column;
+                    align-items: center;
+
+                    :nth-child(5){
+                        border-right: none;
+                    }
+                    
+                    li{
+                        border: none;
+                        padding:0.4rem;
+                    }
+                }
+            }
+
+        }
+    }
+    
+}

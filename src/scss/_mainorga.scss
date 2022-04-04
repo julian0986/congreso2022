@@ -1,0 +1,113 @@
+@import "variables";
+section{
+    .imgorganiza {
+        display: flex;
+        justify-content:space-around ;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: $color4o;
+
+        img{
+            box-shadow: 0px 0px 30px black;
+        }
+
+
+    }
+
+    .infocongreso{
+        display: flex;
+
+        .info{
+            font-family: $fuente1;
+            padding: 2rem;
+            text-align: center;
+            box-sizing: 20%;
+            
+
+            h2{
+                font-size: 3rem;
+                padding-left: 3rem;
+                
+            }
+            p{
+                padding-top: 2rem;
+                text-align: justify;
+                font-size: 1.2rem;
+                padding-left: 6rem;
+                padding-right: 3rem;
+               
+
+            }
+        }
+
+        .imginfo{
+              img{
+                  padding-top: 2rem;
+                  padding-right: 5rem;
+                  width: 70vh;
+                  height: auto;
+              }
+        }
+    }
+
+}
+@media screen and (max-width:1024px) {
+    .organizador{
+        
+        padding-top: 1rem;
+        justify-items: center ;
+        width: 100%;
+        height: auto;
+
+        .infocongreso{
+            flex-direction: column;
+            align-items: center;
+
+            .info{
+                padding: 0;
+
+                p{
+                    padding: 0.2rem;
+                }
+            }
+    
+            .imginfo{
+                
+                img{
+                    padding: 1rem;
+                    width: 100%;
+                    height: auto;
+                    
+
+                }
+              
+              
+            }
+             
+        }
+        
+
+    }
+    .imgorganiza{
+        margin-top: 12rem;        
+        flex-direction: column;
+        align-items: center;
+        
+        img{
+            width: 100%;
+            height: auto;
+            padding: 10px 10px;
+            // box-shadow: 0px 0px 30px black;
+           
+        }
+        
+    }
+
+    
+}
+
+
+
+   
+
+

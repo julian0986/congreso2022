@@ -1,0 +1,96 @@
+@import "variables";
+
+#inscripcion{
+    position: sticky;
+    top: 5rem;
+    
+
+.inscripcion{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    background-color: $color0;
+    position: sticky;
+    
+    
+    p{
+        font-family: $fuente1;
+        font-size: 2rem;
+        align-self: center;
+    }
+    a{
+       
+        text-decoration: none;
+        align-self: center;
+        color: black;
+        font-size: 1.5rem;
+        font-family: $fuente1;
+        border: solid 0.3rem;
+        border-radius: 1rem;
+        padding: 0.8rem;
+        transition: ease-in-out 0.5s;
+
+        i{
+            padding-right: 10px;
+        }
+
+       
+
+    }
+    a:hover{
+        background-color: $azul2;
+
+        color: $color0;
+    }
+   
+        
+    }
+}
+@media screen and (max-width:1024px) {
+    #inscripcion{
+       
+        position: sticky;
+        top: 12rem;
+        width: 100vw;
+        height: auto;
+        
+    
+    .inscripcion{
+
+        padding: 5rem 1rem 1rem 1rem ;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.9);
+       
+
+        
+        
+        p{
+            font-family: $fuente1;
+            font-size: 1.5rem;
+            text-align: center;
+            
+        }
+        a{
+           
+            text-decoration: none;
+            background-color: $azul2;
+            align-self: center;
+            color: $color0;
+            font-size: 1rem;
+            font-family: $fuente1;
+            border: solid 0.3rem $azul2;
+            border-radius: 2rem;
+            
+            i{
+                font-size: 2rem;
+                align-items: center;
+                display: none;
+
+            }
+       
+        }
+        
+            
+        }
+    }
+}

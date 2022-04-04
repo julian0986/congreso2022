@@ -1,0 +1,918 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section .imgorganiza {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 7, 244, 0.2);
+}
+section .imgorganiza img {
+  box-shadow: 0px 0px 30px black;
+}
+section .infocongreso {
+  display: flex;
+}
+section .infocongreso .info {
+  font-family: "Varela Round", sans-serif;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: 20%;
+}
+section .infocongreso .info h2 {
+  font-size: 3rem;
+  padding-left: 3rem;
+}
+section .infocongreso .info p {
+  padding-top: 2rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  padding-left: 6rem;
+  padding-right: 3rem;
+}
+section .infocongreso .imginfo img {
+  padding-top: 2rem;
+  padding-right: 5rem;
+  width: 70vh;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .organizador {
+    padding-top: 1rem;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .organizador .infocongreso {
+    flex-direction: column;
+    align-items: center;
+  }
+  .organizador .infocongreso .info {
+    padding: 0;
+  }
+  .organizador .infocongreso .info p {
+    padding: 0.2rem;
+  }
+  .organizador .infocongreso .imginfo img {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .imgorganiza {
+    margin-top: 12rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgorganiza img {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00426c;
+  border-bottom: solid 4px #0080ff;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+nav .logo img {
+  height: 14vh;
+  width: auto;
+  padding-top: 1vh;
+  padding-left: 3rem;
+}
+
+#menup {
+  display: flex;
+}
+#menup .menu {
+  padding-right: 2rem;
+}
+#menup .menu input {
+  display: none;
+}
+#menup .menu label {
+  display: none;
+}
+#menup .menu ul {
+  display: flex;
+  padding-top: 1rem;
+}
+#menup .menu ul li {
+  list-style-type: none;
+  padding: 2vh;
+  padding-top: 4vh;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Varela Round", sans-serif;
+  font-size: 0.9rem;
+  border-left: solid 0.1rem #fff;
+  border-radius: 1px 1px 1px 1px;
+  text-align: center;
+}
+#menup .menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+#menup .menu ul :nth-child(5) {
+  border-right: solid 0.1rem #fff;
+}
+#menup .menu ul li:hover {
+  background-color: rgba(0, 7, 244, 0.2);
+  border-bottom: solid 3px #0080ff;
+  border-radius: 8px;
+  transition: ease-in-out 0.4s;
+}
+#menup .menu ul li:hover a {
+  color: #fff;
+  transition: ease-in-out 0.4s;
+}
+#menup #menu {
+  display: flex;
+  list-style-type: none;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.3rem;
+  padding: 2rem;
+  text-align: center;
+}
+#menup #menu #ingreso a {
+  text-decoration: none;
+  color: #fff;
+  border: solid 2px #fff;
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+#menup #menu #ingreso :hover {
+  background-color: rgba(0, 7, 244, 0.2);
+  border-bottom: solid 3px #0080ff;
+  border-radius: 8px;
+  transition: ease-in-out 0.4s;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+  }
+  nav .logo {
+    text-align: center;
+    padding: 1rem 4rem 1rem 2rem;
+  }
+  nav .logo img {
+    width: 40vh;
+    height: auto;
+    padding: 0;
+  }
+  nav #menup {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 0;
+    align-items: center;
+  }
+  nav #menup :nth-child(2) #menu {
+    align-items: flex-end;
+    padding-bottom: 1rem;
+  }
+  nav #menup :nth-child(2) #menu #ingreso {
+    padding-bottom: 0.5rem;
+  }
+  nav #menup .menu input:checked ~ ul {
+    display: block;
+  }
+  nav #menup .menu label {
+    box-sizing: border-box;
+    display: block;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 0.5rem;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    user-select: none;
+  }
+  nav #menup .menu input:checked ~ label {
+    background-color: gray;
+    margin: 0;
+    margin-left: 3rem;
+  }
+  nav #menup .menu ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav #menup .menu ul :nth-child(5) {
+    border-right: none;
+  }
+  nav #menup .menu ul li {
+    border: none;
+    padding: 0.4rem;
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .impal {
+  text-align: center;
+  padding-top: 14vh;
+}
+header .impal img {
+  height: 80vh;
+  width: auto;
+}
+header .botonh {
+  text-align: center;
+  background-color: #00426c;
+  padding: 5vh;
+}
+header .botonh :hover {
+  background-color: transparent;
+  border-color: #71fff4;
+  transition: ease-in-out 0.5s;
+}
+header .botonh input {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.3rem;
+  background-color: #003f67;
+  color: white;
+  padding: 1rem 5rem;
+  border-radius: 30px;
+}
+
+section .imgorganiza {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 7, 244, 0.2);
+}
+section .imgorganiza img {
+  box-shadow: 0px 0px 30px black;
+}
+section .infocongreso {
+  display: flex;
+}
+section .infocongreso .info {
+  font-family: "Varela Round", sans-serif;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: 20%;
+}
+section .infocongreso .info h2 {
+  font-size: 3rem;
+  padding-left: 3rem;
+}
+section .infocongreso .info p {
+  padding-top: 2rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  padding-left: 6rem;
+  padding-right: 3rem;
+}
+section .infocongreso .imginfo img {
+  padding-top: 2rem;
+  padding-right: 5rem;
+  width: 70vh;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .organizador {
+    padding-top: 1rem;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .organizador .infocongreso {
+    flex-direction: column;
+    align-items: center;
+  }
+  .organizador .infocongreso .info {
+    padding: 0;
+  }
+  .organizador .infocongreso .info p {
+    padding: 0.2rem;
+  }
+  .organizador .infocongreso .imginfo img {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .imgorganiza {
+    margin-top: 12rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgorganiza img {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+  }
+}
+.footer {
+  display: flex;
+  background-color: #00426c;
+  padding: 0.5rem;
+  padding-left: 1rem;
+}
+.footer :nth-child(3) :nth-child(4) {
+  display: none;
+}
+.footer :nth-child(2) :nth-child(4) {
+  display: none;
+}
+.footer .logofooter {
+  width: 20vw;
+}
+.footer .logofooter img {
+  width: 80%;
+}
+.footer .contacto {
+  width: 30vw;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+}
+.footer .contacto a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .contacto h3, .footer .contacto p, .footer .contacto a {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.footer .redes {
+  width: 20vw;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+.footer .redes a {
+  color: #fff;
+  font-size: 1.4rem;
+  padding-top: 0.7rem;
+}
+.footer .redes a :hover {
+  color: #71fff4;
+}
+
+.copy {
+  background-color: #0080ff;
+  font-size: 0.8rem;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  padding: 0.3rem;
+  color: lightgray;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    width: 100%;
+  }
+  footer .footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .footer :nth-child(3) {
+    width: 100%;
+  }
+  footer .footer :nth-child(3) :nth-child(3) {
+    display: none;
+  }
+  footer .footer :nth-child(3) :nth-child(4) {
+    display: inherit;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  footer .footer :nth-child(2) {
+    width: 100%;
+  }
+  footer .footer :nth-child(2) :nth-child(3) {
+    display: none;
+  }
+  footer .footer :nth-child(2) :nth-child(4) {
+    flex-direction: row;
+    display: inherit;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  footer .footer :nth-child(4) {
+    flex-direction: row;
+    width: 100%;
+  }
+  footer .footer :nth-child(4) h3 {
+    display: none;
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section h3 {
+  font-family: "Varela Round", sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+section .contenidomot {
+  display: flex;
+  padding-bottom: 2rem;
+}
+section .contenidomot .contparrafo {
+  padding: 3rem;
+  align-items: center;
+}
+section .contenidomot .contparrafo :nth-child(2) #icon {
+  padding-bottom: 0rem;
+  padding-top: 10px;
+}
+section .contenidomot .parrafo {
+  display: flex;
+  padding: 2rem;
+}
+section .contenidomot .parrafo .icono {
+  font-size: 2.5rem;
+  color: #00426c;
+  padding: 0.8rem;
+  box-shadow: 0px 0px 5px 1px black;
+  border-radius: 10px;
+}
+section .contenidomot .parrafo p {
+  padding-left: 1rem;
+  font-family: "Varela Round", sans-serif;
+}
+section .contenidomot .parrafo p .has {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    width: 100%;
+    height: auto;
+  }
+  main .contenidomot {
+    flex-direction: column;
+  }
+  main .contenidomot .contparrafo {
+    padding: 0;
+    text-align: justify;
+  }
+}
+.patrocinadores {
+  background-color: #d5d5d5;
+}
+.patrocinadores .contenpatro {
+  padding: 10px;
+}
+.patrocinadores .contenpatro img {
+  width: 100%;
+  height: auto;
+}
+
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 14vh;
+  background-color: rgba(0, 7, 244, 0.2);
+}
+.slider ul {
+  padding: 0;
+  display: flex;
+  width: 400%;
+  animation: change 12s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out 0.2s;
+}
+.slider ul li {
+  width: 100%;
+  list-style: none;
+}
+.slider ul li img {
+  width: 100%;
+}
+
+@keyframes change {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+.control {
+  display: block;
+  background-color: #00426c;
+}
+.control ul {
+  display: flex;
+  justify-content: center;
+}
+.control ul li {
+  padding: 0.5rem;
+  list-style-type: none;
+}
+.control ul li i {
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    display: none;
+  }
+}
+.tarifas {
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  font-family: "Varela Round", sans-serif;
+  background-color: #0080ff;
+  color: white;
+  padding-top: 3rem;
+}
+.tarifas :nth-child(1) {
+  grid-column: 4/11;
+  grid-row: 1/4;
+  font-size: 4.1rem;
+  font-weight: bold;
+  transform: scaleY(1.2);
+}
+.tarifas :nth-child(2) {
+  grid-column: 11/15;
+  grid-row: 1/2;
+  font-size: 1.6rem;
+}
+.tarifas :nth-child(3) {
+  grid-column: 11/15;
+  grid-row: 2/4;
+  font-size: 2.6rem;
+}
+
+#tarifas {
+  background-color: #0080ff;
+  padding: 4rem;
+}
+#tarifas #tablares {
+  display: none;
+}
+#tarifas table {
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  font-family: "Varela Round", sans-serif;
+}
+#tarifas table #th1 {
+  border-radius: 35px 0px 0px 0px;
+}
+#tarifas table #th3 {
+  border-radius: 0px 35px 0px 0px;
+}
+#tarifas table tr {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #fff;
+}
+#tarifas table td {
+  text-align: center;
+  border-collapse: collapse;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#tarifas table th {
+  border-collapse: collapse;
+  background-color: #1629ff;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#tarifas table #bancolombia {
+  font-size: 1.5rem;
+  background-color: rgba(211, 211, 211, 0.521);
+  text-align: center;
+}
+#tarifas table #bancolombia a {
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border: solid 2px #00426c;
+  padding: 0.5rem;
+  border-radius: 15px;
+  background-color: #00426c;
+  color: #fff;
+}
+#tarifas table #bancolombia a:hover {
+  background-color: #fff;
+  color: #00426c;
+  transition: ease-in-out 0.5s;
+}
+
+@media screen and (max-width: 1024px) {
+  .tarifas :nth-child(1) {
+    grid-column: 4/11;
+    grid-row: 1/4;
+    font-size: 2.1rem;
+    font-weight: bold;
+    align-content: center;
+  }
+  .tarifas :nth-child(2) {
+    grid-column: 4/11;
+    grid-row: 3/2;
+    font-size: 1rem;
+    padding-top: 0.4rem;
+  }
+  .tarifas :nth-child(3) {
+    grid-column: 4/11;
+    grid-row: 3/4;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  #tarifas {
+    padding: 0;
+  }
+  #tarifas #table {
+    padding: 0;
+  }
+  #tarifas #table :nth-child(3) {
+    background-color: lightgray;
+  }
+  #tarifas #table :nth-child(5) {
+    background-color: lightgray;
+  }
+  #tarifas #table :nth-child(7) {
+    background-color: lightgray;
+  }
+  #tarifas #table :nth-child(9) {
+    background-color: lightgray;
+  }
+  #tarifas #table :nth-child(11) {
+    background-color: lightgray;
+  }
+  #tarifas #table #tableful {
+    display: none;
+  }
+  #tarifas #tablares {
+    display: inherit;
+    font-size: 1rem;
+    padding-left: 0.7rem;
+  }
+
+  #btnbancolombia a {
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border: solid 2px #00426c;
+    padding: 0.5rem;
+    border-radius: 15px;
+    background-color: #00426c;
+    color: #fff;
+  }
+  #btnbancolombia a:hover {
+    background-color: #fff;
+    color: #00426c;
+    transition: ease-in-out 0.5s;
+  }
+}
+#inscripcion {
+  position: sticky;
+  top: 5rem;
+}
+#inscripcion .inscripcion {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-evenly;
+  background-color: #fff;
+  position: sticky;
+}
+#inscripcion .inscripcion p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 2rem;
+  align-self: center;
+}
+#inscripcion .inscripcion a {
+  text-decoration: none;
+  align-self: center;
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Varela Round", sans-serif;
+  border: solid 0.3rem;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  transition: ease-in-out 0.5s;
+}
+#inscripcion .inscripcion a i {
+  padding-right: 10px;
+}
+#inscripcion .inscripcion a:hover {
+  background-color: #003f67;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  #inscripcion {
+    position: sticky;
+    top: 12rem;
+    width: 100vw;
+    height: auto;
+  }
+  #inscripcion .inscripcion {
+    padding: 5rem 1rem 1rem 1rem;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #inscripcion .inscripcion p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #inscripcion .inscripcion a {
+    text-decoration: none;
+    background-color: #003f67;
+    align-self: center;
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Varela Round", sans-serif;
+    border: solid 0.3rem #003f67;
+    border-radius: 2rem;
+  }
+  #inscripcion .inscripcion a i {
+    font-size: 2rem;
+    align-items: center;
+    display: none;
+  }
+}
+#btndescargas {
+  margin-top: 2rem;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+#btndescargas a {
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border: solid 2px #00426c;
+  padding: 0.5rem;
+  border-radius: 15px;
+  background-color: #00426c;
+  color: #fff;
+}
+#btndescargas a:hover {
+  background-color: #fff;
+  color: #00426c;
+  transition: ease-in-out 0.5s;
+}
+
+#pagosbancolombia {
+  margin-top: 9rem;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+#pagosbancolombia p {
+  margin-bottom: 2rem;
+}
+
+#tarifas {
+  background-color: #0080ff;
+  padding: 4rem;
+}
+#tarifas #tablares {
+  display: none;
+}
+#tarifas table {
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  font-family: "Varela Round", sans-serif;
+}
+#tarifas table :nth-child(4) :nth-child(1) {
+  padding-top: 1rem;
+}
+#tarifas table #th1b {
+  border-radius: 35px 35px 0px 0px;
+}
+#tarifas table tr {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #fff;
+}
+#tarifas table td {
+  text-align: center;
+  border-collapse: collapse;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#tarifas table th {
+  border-collapse: collapse;
+  background-color: #1629ff;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#tarifas table .bancolombia {
+  font-size: 1.5rem;
+  background-color: rgba(211, 211, 211, 0.521);
+  padding: 0.2rem;
+}
+#tarifas table .bancolombia a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #pagosbancolombia {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #tarifas {
+    padding: 0;
+  }
+  #tarifas #table {
+    padding: 0;
+  }
+  #tarifas #table :nth-child(3) {
+    background-color: lightgray;
+  }
+  #tarifas #table :nth-child(5) {
+    background-color: lightgray;
+  }
+  #tarifas #table :nth-child(7) {
+    background-color: lightgray;
+  }
+  #tarifas #table #tableful {
+    display: none;
+  }
+  #tarifas #tablares {
+    display: inherit;
+    font-size: 1rem;
+    padding-left: 0.7rem;
+  }
+  #tarifas #tablares .bancolombia {
+    background-color: lightgrey;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
