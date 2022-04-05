@@ -36,8 +36,11 @@ section .infocongreso .info p {
   padding-left: 6rem;
   padding-right: 3rem;
 }
+section .infocongreso .imginfo {
+  margin-top: 5rem;
+}
 section .infocongreso .imginfo iframe {
-  margin-top: 10rem;
+  margin-top: 5rem;
   padding-right: 5rem;
 }
 
@@ -290,8 +293,11 @@ section .infocongreso .info p {
   padding-left: 6rem;
   padding-right: 3rem;
 }
+section .infocongreso .imginfo {
+  margin-top: 5rem;
+}
 section .infocongreso .imginfo iframe {
-  margin-top: 10rem;
+  margin-top: 5rem;
   padding-right: 5rem;
 }
 
