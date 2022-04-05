@@ -36,11 +36,9 @@ section .infocongreso .info p {
   padding-left: 6rem;
   padding-right: 3rem;
 }
-section .infocongreso .imginfo img {
-  padding-top: 2rem;
+section .infocongreso .imginfo iframe {
+  margin-top: 5rem;
   padding-right: 5rem;
-  width: 70vh;
-  height: auto;
 }
 
 @media screen and (max-width: 1024px) {
@@ -292,11 +290,9 @@ section .infocongreso .info p {
   padding-left: 6rem;
   padding-right: 3rem;
 }
-section .infocongreso .imginfo img {
-  padding-top: 2rem;
+section .infocongreso .imginfo iframe {
+  margin-top: 5rem;
   padding-right: 5rem;
-  width: 70vh;
-  height: auto;
 }
 
 @media screen and (max-width: 1024px) {
