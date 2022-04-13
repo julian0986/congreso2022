@@ -206,8 +206,7 @@ nav .panel-btn {
     flex-direction: column;
   }
   nav .logo {
-    text-align: right;
-    padding: 1rem 4rem 1rem 2rem;
+    text-align: center;
   }
   nav .logo img {
     width: 30vh;
