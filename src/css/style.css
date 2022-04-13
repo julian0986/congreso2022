@@ -215,18 +215,17 @@ nav .panel-btn {
     padding: 0;
   }
   nav .panel-btn {
+    display: block;
     position: fixed;
     z-index: 999;
     top: 1vh;
     bottom: 1vw;
     width: 4rem;
     height: 4rem;
-    border-radius: 50%;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0007f4;
   }
   nav .menup {
     position: fixed;
