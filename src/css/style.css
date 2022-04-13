@@ -90,26 +90,39 @@ nav .logo img {
   width: auto;
   padding-top: 1vh;
   padding-left: 3rem;
+  align-items: center;
+}
+nav .panel-btn {
+  display: none;
+  /*  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color4; */
 }
 
-#menup {
+.menup {
   display: flex;
-}
-#menup .menu {
+  list-style-type: none;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.3rem;
+  padding: 1.5rem;
+  text-align: center;
   padding-left: 5rem;
 }
-#menup .menu input {
-  display: none;
-}
-#menup .menu label {
-  display: none;
-}
-#menup .menu ul {
+.menup ul {
   display: flex;
   padding-top: 1rem;
   cursor: pointer;
 }
-#menup .menu ul li {
+.menup ul li {
   list-style-type: none;
   padding: 2vh;
   padding-top: 4vh;
@@ -120,30 +133,30 @@ nav .logo img {
   border-radius: 1px 1px 1px 1px;
   text-align: center;
 }
-#menup .menu ul li a {
+.menup ul li a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
 }
-#menup .menu ul :nth-child(5) {
+.menup ul :nth-child(5) {
   border-right: solid 0.1rem #fff;
 }
-#menup .menu ul li:hover {
+.menup ul li:hover {
   background-color: rgba(0, 7, 244, 0.2);
   border-bottom: solid 3px rgba(35, 63, 75, 0.2);
   border-radius: 8px;
   transition: ease-in-out 0.4s;
 }
-#menup .menu ul li:hover a {
+.menup ul li:hover a {
   color: #fff;
   transition: ease-in-out 0.4s;
 }
-#menup .menu ul .dropdown {
+.menup ul .dropdown {
   position: relative;
   display: inline-flex;
   font-weight: bold;
 }
-#menup .menu ul .dropdown .dropdown-content {
+.menup ul .dropdown .dropdown-content {
   display: none;
   flex-direction: column;
   position: absolute;
@@ -152,43 +165,35 @@ nav .logo img {
   margin-left: -40px;
   z-index: 1;
 }
-#menup .menu ul .dropdown .dropdown-content :hover {
+.menup ul .dropdown .dropdown-content :hover {
   background-color: rgba(0, 7, 244, 0.2);
 }
-#menup .menu ul .dropdown .dropdown-content li {
+.menup ul .dropdown .dropdown-content li {
   border: none;
   background-color: #fff;
   padding: 0.5rem;
 }
-#menup .menu ul .dropdown .dropdown-content li a {
+.menup ul .dropdown .dropdown-content li a {
   color: black;
 }
-#menup .menu ul .dropdown .dropdown-content li a:hover {
+.menup ul .dropdown .dropdown-content li a:hover {
   background: none;
   color: #00426c;
 }
-#menup .menu ul .dropdown:hover .dropdown-content {
+.menup ul .dropdown:hover .dropdown-content {
   display: block;
 }
-#menup .menu ul :hover {
+.menup ul :hover {
   color: #fff;
 }
-#menup #menu {
-  display: flex;
-  list-style-type: none;
-  font-family: "Varela Round", sans-serif;
-  font-size: 1.3rem;
-  padding: 2rem;
-  text-align: center;
-}
-#menup #menu #ingreso a {
+.menup #ingreso a {
   text-decoration: none;
   color: #fff;
   border: solid 2px #fff;
   padding: 0.7rem;
   border-radius: 10px;
 }
-#menup #menu #ingreso :hover {
+.menup #ingreso :hover {
   background-color: rgba(0, 7, 244, 0.2);
   border-bottom: solid 3px #0080ff;
   border-radius: 8px;
@@ -201,61 +206,63 @@ nav .logo img {
     flex-direction: column;
   }
   nav .logo {
-    text-align: center;
+    text-align: right;
     padding: 1rem 4rem 1rem 2rem;
   }
   nav .logo img {
-    width: 40vh;
+    width: 30vh;
     height: auto;
     padding: 0;
   }
-  nav #menup {
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    padding-top: 1rem;
-    margin-left: 1rem;
-    padding-bottom: 0;
+  nav .panel-btn {
+    position: fixed;
+    z-index: 999;
+    top: 1vh;
+    bottom: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: #0007f4;
   }
-  nav #menup :nth-child(2) #menu {
-    align-items: flex-end;
-    padding-bottom: 1rem;
+  nav .menup {
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #00426c;
+    transition: transform 0.3s ease;
+    transform: translate(0, -100%);
   }
-  nav #menup :nth-child(2) #menu #ingreso {
-    padding-bottom: 0.5rem;
+  nav .menup .is-active {
+    transform: translate(0, 0);
   }
-  nav #menup .menu input:checked ~ ul {
-    display: block;
-  }
-  nav #menup .menu label {
-    box-sizing: border-box;
-    display: block;
-    color: #fff;
-    border: solid 2px #fff;
-    border-radius: 10px;
-    font-size: 2rem;
-    padding: 0.5rem;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    user-select: none;
-  }
-  nav #menup .menu input:checked ~ label {
-    background-color: gray;
-    margin: 0;
-    margin-left: 3rem;
-  }
-  nav #menup .menu ul {
-    display: none;
+  nav .menup .mostrarham {
+    width: inherit;
+    display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    text-align: center;
   }
-  nav #menup .menu ul :nth-child(5) {
-    border-right: none;
+  nav .menup .mostrarham li {
+    padding: 0.5rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    color: #0080ff;
+    transition: all 0.3s ease;
   }
-  nav #menup .menu ul li {
-    border: none;
-    padding: 0.4rem;
+  nav .menup .mostrarham li :hover {
+    font-weight: bold;
+    color: #0007f4;
+    background-color: #fff;
   }
 }
 *,

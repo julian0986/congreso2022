@@ -16,6 +16,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="./src/css/style.css">
   <link rel="icon" href="./src/img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
   <title>Congreso 2022</title>
 </head>
 
@@ -29,39 +30,46 @@
       <div class="logo">
         <img src="./src/img/logos/Logo-36-Congreso.png" alt="">
       </div>
+      <!-- Menu burger -->
 
-      <div id="menup">
-        <div class="menu">
-          <input type="checkbox" id="checkhamb">
-          <label for="checkhamb"><i class="fas fa-bars"></i></label>
-          <ul class="mostrarham">
-            <li><a href="#infocongreso">BIENVENIDOS</a></li>
-            <li><a href="#infocongreso">NUESTRO CONGRESO</a></li>
-            <li class="dropdown">COMERCIAL
-              <ul class="dropdown-content">
-                <li><a href="#infocongreso">BROCHURE</a></li>
-                <li><a href="#infocongreso">MUESTRA COMERCIAL</a></li>
-              </ul>
-
-            </li>
-
-            <li class="dropdown">TURISMO
-              <ul class="dropdown-content">
-                <li><a href="#infocongreso">HOTEL LAS AMERICAS</a></li>
-                <li><a href="#infocongreso">TARIFAS</a></li>
-                <li><a href="#infocongreso">OTRO HOTEL</a></li>
-                <li><a href="#infocongreso">RESEÑA</a></li>
-                <li><a href="#infocongreso">AEROLINEA</a></li>
-              </ul>
+      <button class="panel-btn hamburger hamburger--vortex" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
 
 
-            </li>
-            <li><a href="#footer">CONTACTO</a></li>
-            <li><a href="#" target="_blank">AGENDA</a>
-            </li>
-            <li><a href="#" target="_blank">INSCRIPCIÓN</a></li>
-          </ul>
-        </div>
+      <!-- fin burghuer -->
+
+      <div class="menup">
+        <ul class="mostrarham">
+          <li><a href="#infocongreso">BIENVENIDOS</a></li>
+          <li><a href="#infocongreso">NUESTRO CONGRESO</a></li>
+          <li class="dropdown">COMERCIAL
+            <ul class="dropdown-content">
+              <li><a href="#infocongreso">BROCHURE</a></li>
+              <li><a href="#infocongreso">MUESTRA COMERCIAL</a></li>
+            </ul>
+
+          </li>
+
+          <li class="dropdown">TURISMO
+            <ul class="dropdown-content">
+              <li><a href="#infocongreso">HOTEL LAS AMERICAS</a></li>
+              <li><a href="#infocongreso">TARIFAS</a></li>
+              <li><a href="#infocongreso">OTROS HOTELES</a></li>
+              <li><a href="./src/doc/RESENADECARTAGENAENESP.docx">RESEÑA</a></li>
+              <li><a href="#infocongreso">AEROLINEA OFICIAL</a></li>
+            </ul>
+
+
+          </li>
+          <li><a href="#footer">CONTACTO</a></li>
+          <li><a href="#" target="_blank">AGENDA</a>
+          </li>
+          <li><a href="#" target="_blank">INSCRIPCIÓN</a></li>
+        </ul>
+
         <!-- <div>
           <ul id="menu">
             <li id="ingreso"><a href="https://virtual.congresofendipetroleo.com/">INGRESAR</a></li>
@@ -296,7 +304,7 @@
 
   </footer>
 
-
+  <script src="./src/js/index_dom.js"></script>
   <script src="https://kit.fontawesome.com/11638189dd.js" crossorigin="anonymous"></script>
 </body>
 
