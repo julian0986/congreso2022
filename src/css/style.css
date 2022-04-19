@@ -58,14 +58,15 @@ section .infocongreso .imginfo iframe {
   .organizador .infocongreso .info p {
     padding: 0.2rem;
   }
-  .organizador .infocongreso .imginfo img {
-    padding: 1rem;
-    width: 100%;
-    height: auto;
+  .organizador .infocongreso .imginfo iframe {
+    padding: 0;
+    margin: 1rem 0 1rem 0;
+    width: 315px;
+    height: 200px;
   }
 
   .imgorganiza {
-    margin-top: 12rem;
+    margin-top: 1rem;
     flex-direction: column;
     align-items: center;
   }
@@ -85,27 +86,16 @@ nav {
   position: fixed;
   width: 100%;
 }
+nav #toggler,
+nav label {
+  display: none;
+}
 nav .logo img {
   height: 14vh;
   width: auto;
   padding-top: 1vh;
   padding-left: 3rem;
   align-items: center;
-}
-nav .panel-btn {
-  display: none;
-  /*  position: fixed;
-  z-index: 999;
-  bottom: 1vh;
-  right: 1vw;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $color4; */
 }
 
 .menup {
@@ -205,6 +195,12 @@ nav .panel-btn {
   nav {
     flex-direction: column;
   }
+  nav label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
   nav .logo {
     text-align: center;
   }
@@ -213,41 +209,16 @@ nav .panel-btn {
     height: auto;
     padding: 0;
   }
-  nav .panel-btn {
-    display: block;
-    position: fixed;
-    z-index: 999;
-    top: 1vh;
-    bottom: 1vw;
-    width: 4rem;
-    height: 4rem;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   nav .menup {
-    position: fixed;
-    z-index: 998;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: 100%;
-    background-color: #00426c;
-    transition: transform 0.3s ease;
-    transform: translate(0, -100%);
-  }
-  nav .menup .is-active {
-    transform: translate(0, 0);
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
   }
   nav .menup .mostrarham {
-    width: inherit;
-    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    padding: 0;
   }
   nav .menup .mostrarham li {
     padding: 0.5rem;
@@ -256,11 +227,15 @@ nav .panel-btn {
     font-size: 1.5rem;
     color: #0080ff;
     transition: all 0.3s ease;
+    border: none;
   }
   nav .menup .mostrarham li :hover {
     font-weight: bold;
     color: #0007f4;
     background-color: #fff;
+  }
+  nav #toggler:checked ~ .menup {
+    max-height: 100%;
   }
 }
 *,
@@ -271,33 +246,40 @@ nav .panel-btn {
   box-sizing: border-box;
 }
 
-header .impal {
-  text-align: center;
-  padding-top: 14vh;
-}
-header .impal img {
-  height: 80vh;
-  width: auto;
-}
-header .botonh {
-  text-align: center;
-  background-color: #00426c;
-  padding: 5vh;
-}
-header .botonh :hover {
-  background-color: transparent;
-  border-color: #71fff4;
-  transition: ease-in-out 0.5s;
-}
-header .botonh input {
-  font-family: "Varela Round", sans-serif;
-  font-size: 1.3rem;
-  background-color: #003f67;
-  color: white;
-  padding: 1rem 5rem;
-  border-radius: 30px;
+/* header {
+  .impal {
+    text-align: center;
+    padding-top: 14vh;
+    img {
+      height: 80vh;
+      width: auto;
+    }
+  }
+  .botonh {
+    text-align: center;
+    background-color: $color10;
+    padding: 5vh;
+
+    :hover {
+      background-color: transparent;
+      border-color: $color1;
+      transition: ease-in-out 0.5s;
+    }
+
+    input {
+      font-family: "Varela Round", sans-serif;
+      font-size: 1.3rem;
+      background-color: $azul2;
+      color: white;
+      padding: 1rem 5rem;
+      border-radius: 30px;
+    }
+  }
 }
 
+@media screen and (max-width: 1024px) {
+}
+ */
 section .imgorganiza {
   display: flex;
   justify-content: space-around;
@@ -350,14 +332,15 @@ section .infocongreso .imginfo iframe {
   .organizador .infocongreso .info p {
     padding: 0.2rem;
   }
-  .organizador .infocongreso .imginfo img {
-    padding: 1rem;
-    width: 100%;
-    height: auto;
+  .organizador .infocongreso .imginfo iframe {
+    padding: 0;
+    margin: 1rem 0 1rem 0;
+    width: 315px;
+    height: 200px;
   }
 
   .imgorganiza {
-    margin-top: 12rem;
+    margin-top: 1rem;
     flex-direction: column;
     align-items: center;
   }
