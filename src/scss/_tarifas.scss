@@ -1,190 +1,91 @@
 @import "variables";
-.tarifas{
-    display: grid;
-    grid-template-columns: repeat(17, 1fr);
-    grid-template-rows: repeat(3,1fr);
+.tarifas {
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  font-family: $fuente1;
+  background-color: $color2;
+  color: white;
+  padding-top: 3rem;
+
+  :nth-child(1) {
+    grid-column: 4/11;
+    grid-row: 1/4;
+    font-size: 4.1rem;
+    font-weight: bold;
+    transform: scaleY(1.2);
+  }
+  :nth-child(2) {
+    grid-column: 11/15;
+    grid-row: 1/2;
+    font-size: 1.6rem;
+  }
+  :nth-child(3) {
+    grid-column: 11/15;
+    grid-row: 2/4;
+    font-size: 2.6rem;
+  }
+}
+
+#tarifas {
+  background-color: $color2;
+  padding: 4rem;
+
+  #tablares {
+    display: none;
+  }
+
+  table {
+    text-align: center;
+
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
     font-family: $fuente1;
-    background-color: $color2;
-    color: white;
-    padding-top: 3rem;
-    
-    :nth-child(1){
-        grid-column: 4/11;
-        grid-row: 1/4;
-        font-size: 4.1rem;
-        font-weight: bold;
-        transform: scaleY(1.2);
-        
 
+    #th1 {
+      border-radius: 35px 0px 0px 0px;
+      font-size: 1.5rem;
     }
-    :nth-child(2){
-        grid-column: 11/15;
-        grid-row: 1/2;
-        font-size: 1.6rem;
-    }
-    :nth-child(3){
-        grid-column: 11/15;
-        grid-row: 2/4;
-        font-size: 2.6rem;
-    }
-}
-
-#tarifas{
-    background-color: $color2;
-    padding: 4rem;
-
-    
-        #tablares{
-            display: none;
-        }
-
-    table{
-        text-align: center;
-      
-        border-collapse: collapse;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 2rem;     
-        font-family: $fuente1; 
-  
-       
-        #th1{
-            border-radius: 35px 0px 0px 0px;
-        }
-       
-        #th3{
-            border-radius: 0px 35px 0px 0px;
-            
-
-        }
-        
-     
-        tr{
-            padding-left: 3rem;
-            padding-right: 3rem;
-            background-color: $color0;
-
-          
-        }
-        
-        
-        td{
-            text-align: center;
-            border-collapse: collapse;
-            padding-left: 5rem;
-            padding-right: 5rem;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-
-            
-        }
-        th{
-            
-            border-collapse: collapse;
-            background-color: $color3;
-            color: $color0;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            
-
-            
-        }
-        #bancolombia{
-            font-size: 1.5rem;
-            background-color: rgba(211, 211, 211, 0.521);
-            text-align: center;
-
-            a{
-                margin-top: 2rem;
-                text-decoration: none;
-                font-size: 1rem;
-                border: solid 2px $azul1;
-                padding: 0.5rem;
-                border-radius: 15px;
-                background-color: $azul1;
-                color: $color0;
-                
-                
-               
-            }
-            a:hover{
-                background-color: $color0;
-                color: $azul1;
-                transition: ease-in-out 0.5s;
-            }
-        }
-        
-    }
-    
-
-}
-
-@media screen and (max-width:1024px) {
-
-    .tarifas{
-        :nth-child(1){
-            grid-column: 4/11;
-            grid-row: 1/4;
-            font-size: 2.1rem;
-            font-weight: bold;
-            align-content: center;
-            
-        }
-        :nth-child(2){
-            grid-column: 4/11;
-            grid-row: 3/2;
-            font-size: 1rem;
-            padding-top: 0.4rem;
-        }
-        :nth-child(3){
-            grid-column: 4/11;
-            grid-row: 3/4;
-            font-size: 1.6rem;
-            text-align: center;
-        }
+    #th2 {
+      font-size: 1.5rem;
     }
 
-    #tarifas{
-        padding: 0;
-        
-        #table{
-           padding: 0;
-           
-            :nth-child(3){
-                background-color: lightgray;
-            }
-            :nth-child(5){
-                background-color: lightgray;
-            }
-            :nth-child(7){
-                background-color: lightgray;
-            }
-            :nth-child(9){
-                background-color: lightgray;
-            }
-            :nth-child(11){
-                background-color: lightgray;
-            }
-            #tableful{
-                display: none;
-
-            }
-           
-            }
-
-
-        #tablares{
-            display: inherit;
-            font-size: 1rem;
-            padding-left: 0.7rem;
-           
-        
-        }
+    #th3 {
+      border-radius: 0px 35px 0px 0px;
+      font-size: 1.5rem;
     }
-  
-   #btnbancolombia{
-    a{
-        margin-top: 1rem;
+
+    tr {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      background-color: $color0;
+    }
+
+    td {
+      text-align: center;
+      border-collapse: collapse;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: 1.7rem;
+    }
+    th {
+      border-collapse: collapse;
+      background-color: $color3;
+      color: $color0;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    #bancolombia {
+      font-size: 1.5rem;
+      background-color: rgba(211, 211, 211, 0.521);
+      text-align: center;
+
+      a {
+        margin-top: 2rem;
         text-decoration: none;
         font-size: 1rem;
         border: solid 2px $azul1;
@@ -192,17 +93,87 @@
         border-radius: 15px;
         background-color: $azul1;
         color: $color0;
-        
-        
-       
-    }
-    a:hover{
+      }
+      a:hover {
         background-color: $color0;
         color: $azul1;
         transition: ease-in-out 0.5s;
+      }
     }
-   }
+  }
 }
 
+@media screen and (max-width: 1024px) {
+  .tarifas {
+    :nth-child(1) {
+      grid-column: 4/11;
+      grid-row: 1/4;
+      font-size: 2.1rem;
+      font-weight: bold;
+      align-content: center;
+    }
+    :nth-child(2) {
+      grid-column: 4/11;
+      grid-row: 3/2;
+      font-size: 1rem;
+      padding-top: 0.4rem;
+    }
+    :nth-child(3) {
+      grid-column: 4/11;
+      grid-row: 3/4;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  }
 
+  #tarifas {
+    padding: 0;
 
+    #table {
+      padding: 0;
+
+      :nth-child(3) {
+        background-color: lightgray;
+      }
+      :nth-child(5) {
+        background-color: lightgray;
+      }
+      :nth-child(7) {
+        background-color: lightgray;
+      }
+      :nth-child(9) {
+        background-color: lightgray;
+      }
+      :nth-child(11) {
+        background-color: lightgray;
+      }
+      #tableful {
+        display: none;
+      }
+    }
+
+    #tablares {
+      display: inherit;
+      font-size: 1rem;
+      padding-left: 0.7rem;
+    }
+  }
+
+  #btnbancolombia {
+    a {
+      margin-top: 1rem;
+      text-decoration: none;
+      font-size: 1rem;
+      border: solid 2px $azul1;
+      padding: 0.5rem;
+      border-radius: 15px;
+      background-color: $azul1;
+      color: $color0;
+    }
+    a:hover {
+      background-color: $color0;
+      color: $azul1;
+      transition: ease-in-out 0.5s;
+    }
+  }
+}

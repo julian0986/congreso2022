@@ -635,9 +635,14 @@ section .contenidomot .parrafo p .has {
 }
 #tarifas table #th1 {
   border-radius: 35px 0px 0px 0px;
+  font-size: 1.5rem;
+}
+#tarifas table #th2 {
+  font-size: 1.5rem;
 }
 #tarifas table #th3 {
   border-radius: 0px 35px 0px 0px;
+  font-size: 1.5rem;
 }
 #tarifas table tr {
   padding-left: 3rem;
@@ -651,6 +656,7 @@ section .contenidomot .parrafo p .has {
   padding-right: 5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-size: 1.7rem;
 }
 #tarifas table th {
   border-collapse: collapse;
