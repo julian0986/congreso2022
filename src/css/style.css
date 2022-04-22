@@ -588,7 +588,7 @@ section .contenidomot .parrafo p .has {
 
 @media screen and (max-width: 1024px) {
   .slider {
-    display: none;
+    display: block;
   }
 }
 .tarifas {
