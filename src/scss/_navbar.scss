@@ -172,11 +172,30 @@ nav {
           color: $color2;
           transition: all 0.3s ease;
           border: none;
+          font-size: 0.7rem;
+
+          a {
+            font-size: 0.7rem;
+          }
 
           :hover {
             font-weight: bold;
             color: $color4;
             background-color: $color0;
+          }
+        }
+      }
+      .dropdown {
+        .dropdown-content {
+          margin-left: 6rem;
+          margin-top: -4rem;
+        }
+        .turism {
+          li {
+            margin-top: 5px;
+            background-color: $color4o;
+            padding: 5px;
+            border-radius: 8px;
           }
         }
       }

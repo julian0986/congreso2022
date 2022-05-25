@@ -228,11 +228,25 @@ nav .logo img {
     color: #0080ff;
     transition: all 0.3s ease;
     border: none;
+    font-size: 0.7rem;
+  }
+  nav .menup .mostrarham li a {
+    font-size: 0.7rem;
   }
   nav .menup .mostrarham li :hover {
     font-weight: bold;
     color: #0007f4;
     background-color: #fff;
+  }
+  nav .menup .dropdown .dropdown-content {
+    margin-left: 6rem;
+    margin-top: -4rem;
+  }
+  nav .menup .dropdown .turism li {
+    margin-top: 5px;
+    background-color: rgba(0, 7, 244, 0.2);
+    padding: 5px;
+    border-radius: 8px;
   }
   nav #toggler:checked ~ .menup {
     max-height: 100%;
