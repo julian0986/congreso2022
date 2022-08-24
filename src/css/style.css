@@ -161,14 +161,18 @@ nav .logo img {
 .menup ul .dropdown .dropdown-content li {
   border: none;
   background-color: #fff;
-  padding: 0.5rem;
+  padding: 0.7rem;
 }
 .menup ul .dropdown .dropdown-content li a {
   color: black;
 }
 .menup ul .dropdown .dropdown-content li a:hover {
   background: none;
+  color: #000;
+}
+.menup ul .dropdown .dropdown-content li p {
   color: #00426c;
+  font-size: 16px;
 }
 .menup ul .dropdown:hover .dropdown-content {
   display: block;
@@ -232,6 +236,9 @@ nav .logo img {
   }
   nav .menup .mostrarham li a {
     font-size: 0.7rem;
+  }
+  nav .menup .mostrarham li p {
+    margin-top: 1rem;
   }
   nav .menup .mostrarham li :hover {
     font-weight: bold;

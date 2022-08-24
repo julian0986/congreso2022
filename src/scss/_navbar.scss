@@ -91,14 +91,18 @@ nav {
         li {
           border: none;
           background-color: $color0;
-          padding: 0.5rem;
+          padding: 0.7rem;
 
           a {
             color: black;
           }
           a:hover {
             background: none;
+            color: $color01;
+          }
+          p {
             color: $color10;
+            font-size: 16px;
           }
         }
       }
@@ -176,6 +180,9 @@ nav {
 
           a {
             font-size: 0.7rem;
+          }
+          p {
+            margin-top: 1rem;
           }
 
           :hover {
