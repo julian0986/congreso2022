@@ -1,225 +1,295 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="icon" href="./src/img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+    />
+    <title>Congreso 2022</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./src/css/style.css">
-  <link rel="icon" href="./src/img/favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
-  <title>Congreso 2022</title>
-</head>
+  <body>
+    <div style="background-color: black">
+      <a
+        style="color: white; text-decoration: none; text-align: right"
+        href="https://virtual2021.congresofendipetroleo.com/src/view/nacional.php"
+        target="_blank"
+        >Auditorio</a
+      >
+    </div>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./src/img/logos/Logo-36-Congreso.png" alt="" />
+        </div>
+        <input type="checkbox" id="toggler" />
+        <label for="toggler"><i class="fa-solid fa-bars"></i></label>
 
-<body>
-  <div style="background-color:black;">
-    <a style="color:white; text-decoration:none; text-align: right;"
-      href="https://virtual2021.congresofendipetroleo.com/src/view/nacional.php" target="_blank">Auditorio</a>
-  </div>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="./src/img/logos/Logo-36-Congreso.png" alt="">
-      </div>
-      <input type="checkbox" id="toggler">
-      <label for="toggler"><i class="fa-solid fa-bars"></i></label>
+        <div class="menup">
+          <ul class="mostrarham">
+            <li class="dropdown">
+              RESERVAS
+              <ul class="dropdown-content">
+                <li>
+                  <p class="reservas">
+                    Karol Teran Contacto: 310 352 8372 - 322 568 4470 Email:
+                    reservas@contactos.com.co
+                  </p>
+                </li>
+              </ul>
+            </li>
 
-      <div class="menup">
-        <ul class="mostrarham">
-          <li class="dropdown">RESERVAS
-            <ul class="dropdown-content">
-              <li>
-                <p class="reservas">Karol Teran
-                  Contacto: 310 352 8372 - 322 568 4470
-                  Email: reservas@contactos.com.co</p>
-              </li>
+            <li><a href="#infocongreso">BIENVENIDOS</a></li>
+            <li><a href="#infocongreso">NUESTRO CONGRESO</a></li>
+            <li class="dropdown">
+              COMERCIAL
+              <ul class="dropdown-content turism">
+                <li>
+                  <a
+                    href="./src/doc/Brochure_Comercial_Fendipetroleo01082022.pdf"
+                    >BROCHURE</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./src/doc/PLANO_COMERCIAL_FENDIPETROLEO22.08.2022.pdf"
+                    >MUESTRA COMERCIAL</a
+                  >
+                </li>
+              </ul>
+            </li>
 
-            </ul>
+            <li class="dropdown">
+              TURISMO
+              <ul class="dropdown-content turism">
+                <li>
+                  <a href="./src/doc/HOTEL_LAS_AMERCIAS.pdf"
+                    >HOTEL LAS AMERICAS</a
+                  >
+                </li>
+                <li>
+                  <a href="./src/doc/HOTEL_SEDE_TARIFASYOTROSHOTELES.pdf"
+                    >HOTEL SEDE, TARIFAS, OTROS HOTELES</a
+                  >
+                </li>
+                <li>
+                  <a href="./src/doc/RESENADECARTAGENA2022.pdf">RESEÑA</a>
+                </li>
+                <li><a href="./src/doc/GN725.pdf">AEROLINEA OFICIAL</a></li>
+              </ul>
+            </li>
+            <li><a href="#footer">CONTACTO</a></li>
+            <li>
+              <a
+                href="./src/doc/Agenda_académica_36°_Congreso_Nacional_Fendipetróleo02-08.pdf"
+                target="_blank"
+                >AGENDA</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://fm33.easytechpro.com/fmi/webd/sucongreso?script=FEDEinicio"
+                target="_blank"
+                >INSCRIPCIÓN</a
+              >
+            </li>
+          </ul>
 
-          </li>
-
-          <li><a href="#infocongreso">BIENVENIDOS</a></li>
-          <li><a href="#infocongreso">NUESTRO CONGRESO</a></li>
-          <li class="dropdown">COMERCIAL
-            <ul class="dropdown-content turism">
-              <li><a href="./src/doc/Brochure_Comercial_Fendipetroleo01082022.pdf">BROCHURE</a></li>
-              <li><a href="./src/doc/PLANO_COMERCIAL_FENDIPETROLEO22.08.2022.pdf">MUESTRA COMERCIAL</a></li>
-            </ul>
-
-          </li>
-
-          <li class="dropdown">TURISMO
-            <ul class="dropdown-content turism">
-              <li><a href="./src/doc/HOTEL_LAS_AMERCIAS.pdf">HOTEL LAS AMERICAS</a></li>
-              <li><a href="./src/doc/HOTEL_SEDE_TARIFASYOTROSHOTELES.pdf">HOTEL SEDE, TARIFAS, OTROS HOTELES</a></li>
-              <li><a href="./src/doc/RESENADECARTAGENA2022.pdf">RESEÑA</a></li>
-              <li><a href="./src/doc/GN725.pdf">AEROLINEA OFICIAL</a></li>
-            </ul>
-
-
-          </li>
-          <li><a href="#footer">CONTACTO</a></li>
-          <li><a href="./src/doc/Agenda_académica_36°_Congreso_Nacional_Fendipetróleo02-08.pdf"
-              target="_blank">AGENDA</a>
-          </li>
-          <li><a href="https://fm33.easytechpro.com/fmi/webd/sucongreso?script=FEDEinicio"
-              target="_blank">INSCRIPCIÓN</a></li>
-
-        </ul>
-
-        <!-- <div>
+          <!-- <div>
           <ul id="menu">
             <li id="ingreso"><a href="https://virtual.congresofendipetroleo.com/">INGRESAR</a></li>
           </ul>
         </div> -->
-      </div>
-
-    </nav>
-
-  </header>
-  <main>
-    <!--Inicio Slider-->
-    <div class="slider">
-      <ul>
-        <li id="0"><img src="./src/img/imgslider/01.png" alt=""></li>
-        <li id="1"><img src="./src/img/imgslider/002-1.png" alt=""></li>
-        <li id="2"><img src="./src/img/imgslider/03.png" alt=""></li>
-        <li id="3"><img src="./src/img/imgslider/01.png"></li>
-        <!-- <li id="4"><img src="./src/img/imgslider/AEREA1.png"></li>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Inicio Slider-->
+      <div class="slider">
+        <ul>
+          <li id="0"><img src="./src/img/imgslider/01.png" alt="" /></li>
+          <li id="1"><img src="./src/img/imgslider/002-1.png" alt="" /></li>
+          <li id="2"><img src="./src/img/imgslider/03.png" alt="" /></li>
+          <li id="3"><img src="./src/img/imgslider/01.png" /></li>
+          <!-- <li id="4"><img src="./src/img/imgslider/AEREA1.png"></li>
             <li id="5"><img src="./src/img/imgslider/AEREAS2.png"></li>
             <li id="6"><img src="./src/img/imgslider/AEREAS3.png"></li> -->
-      </ul>
-
-    </div>
-    <!--   <section id="inscripcion">
+        </ul>
+      </div>
+      <!--   <section id="inscripcion">
       <div class="inscripcion">
         <p>Te invitamos a inscribirte aquí</p>
         <a href="https://registro.congresofendipetroleo.com/"><i class="fab fa-wpforms"></i>Inscríbete</a>
       </div>
     </section> -->
 
-    <section class="organizador">
-      <article class="imgorganiza">
-        <div>
-          <a href="https://www.fendipetroleo.com">
-            <img src="./src/img/organizadores/02_fendipetroleo.png" alt="">
-          </a>
-        </div>
-        <!-- <hr> -->
-        <div>
-          <img src="./src/img/organizadores/LogoAliado.png" alt="">
-        </div>
-      </article>
-      <article class="infocongreso" id="infocongreso">
-        <div class="info">
-          <h2>Nuestro Congreso</h2>
-          <p>La Federación de Distribuidores de Combustibles y Energéticos – Fendipetróleo - realizará los días 23, 24 y
-            25 de
-            noviembre del 2022 el Trigésimo Sexto Congreso anual y el Tercer Congreso Internacional de Empresarios de
-            Combustibles: “Un paso
-            hacia el progreso, apuntando a la sostenibilidad”. Este año, el evento se realizará en la ciudad de
-            Cartagena, en el
-            Centro de Convenciones Hotel Las Américas, en esta oportunidad esperamos la participación de 1000
-            asistentes. La agenda
-            académica, estará orientada al diseño de políticas que, de manera conjunta con el Gobierno Nacional, nos
-            permitan
-            privilegiar al consumidor como eje central de un mercado cada día más competitivo y que requiere de
-            estrategias,
-            responsabilidades y claros desafíos para el crecimiento y sostenibilidad del sector.</p>
-
-        </div>
-        <div class="imginfo">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/TWJce6OdvaU" title="POR QUÉ CARTAGENA"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-          <!--  <iframe width="560" height="315" src="https://www.youtube.com/embed/TWJce6OdvaU" title="YouTube video player"
+      <section class="organizador">
+        <article class="imgorganiza">
+          <div>
+            <a href="https://www.fendipetroleo.com">
+              <img src="./src/img/organizadores/02_fendipetroleo.png" alt="" />
+            </a>
+          </div>
+          <!-- <hr> -->
+          <div>
+            <img src="./src/img/organizadores/LogoAliado.png" alt="" />
+          </div>
+        </article>
+        <article class="infocongreso" id="infocongreso">
+          <div class="info">
+            <h2>Nuestro Congreso</h2>
+            <p>
+              La Federación de Distribuidores de Combustibles y Energéticos –
+              Fendipetróleo - realizará los días 23, 24 y 25 de noviembre del
+              2022 el Trigésimo Sexto Congreso anual y el Tercer Congreso
+              Internacional de Empresarios de Combustibles: “Un paso hacia el
+              progreso, apuntando a la sostenibilidad”. Este año, el evento se
+              realizará en la ciudad de Cartagena, en el Centro de Convenciones
+              Hotel Las Américas, en esta oportunidad esperamos la participación
+              de 1000 asistentes. La agenda académica, estará orientada al
+              diseño de políticas que, de manera conjunta con el Gobierno
+              Nacional, nos permitan privilegiar al consumidor como eje central
+              de un mercado cada día más competitivo y que requiere de
+              estrategias, responsabilidades y claros desafíos para el
+              crecimiento y sostenibilidad del sector.
+            </p>
+          </div>
+          <div class="imginfo">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/TWJce6OdvaU"
+              title="POR QUÉ CARTAGENA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <!--  <iframe width="560" height="315" src="https://www.youtube.com/embed/TWJce6OdvaU" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe> -->
-        </div>
-      </article>
-    </section>
-    <section class="patrocinadores">
-      <div class="contenpatro">
-        <img src="./src/img/patrocinadores/Patrocinadores.jpg" alt="">
-       <!--  <img src="./src/img/patrocinadores/tira_logos_06.png" alt="">
-        <img src="./src/img/patrocinadores/tira_logos_07.png" alt="">
-        <img src="./src/img/patrocinadores/tira_logos_08.png" alt=""> -->
-
-      </div>
-    </section>
-    <section class="motivos">
-      <h3>Motivos para participar del congreso </h3>
-
-      <div class="contenidomot">
-        <div class="contparrafo">
-          <div class="parrafo">
-            <p class="icono"><i class="fas fa-gas-pump"></i></p>
-            <p>Somos el evento de los empresarios de combustibles y energéticos más
-              importante de Colombia.</p>
           </div>
-          <div class="parrafo">
-            <p class="icono"><i class="fas fa-head-side-mask"></i></p>
-            <p>La pandemia nos motivó a reinventarnos, aprendimos que el mundo no se
-              detiene y corroboramos que nuestro sector es uno de los grandes motores
-              <!-- de desarrollo del país. Ahora vamos por la <span
+        </article>
+      </section>
+      <section class="patrocinadores">
+        <div class="slider2">
+          <ul>
+            <li id="0"><img src="./src/img/imgslider/baner-2-congreso.png" alt="" /></li>
+            <li id="1"><img src="./src/img/imgslider/patrocinadores_1.jpg" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+      <section class="motivos">
+        <h3>Motivos para participar del congreso</h3>
+
+        <div class="contenidomot">
+          <div class="contparrafo">
+            <div class="parrafo">
+              <p class="icono"><i class="fas fa-gas-pump"></i></p>
+              <p>
+                Somos el evento de los empresarios de combustibles y energéticos
+                más importante de Colombia.
+              </p>
+            </div>
+            <div class="parrafo">
+              <p class="icono"><i class="fas fa-head-side-mask"></i></p>
+              <p>
+                La pandemia nos motivó a reinventarnos, aprendimos que el mundo
+                no se detiene y corroboramos que nuestro sector es uno de los
+                grandes motores
+                <!-- de desarrollo del país. Ahora vamos por la <span
                 class="has">#UnidosPorLaReactivaciónSostenibleDeNuestroSector.</span> </p> -->
+              </p>
+            </div>
+          </div>
+          <div class="contparrafo">
+            <div class="parrafo">
+              <p class="icono"><i class="fas fa-globe-americas"></i></p>
+              <p>
+                Con la agenda internacional tendremos una perspectiva del
+                negocio en Latinoamérica
+              </p>
+            </div>
+            <div class="parrafo">
+              <p class="icono" id="icon">
+                <i class="fas fa-project-diagram"></i>
+              </p>
+              <p>
+                Conoceremos qué están haciendo las empresas del sector y
+                tendremos la oportunidad de visibilizar nuestras marcas a través
+                de una experiencia de relacionamiento (networking) y cerrar
+                negocios.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="contparrafo">
-          <div class="parrafo">
-            <p class="icono"><i class="fas fa-globe-americas"></i></p>
-            <p>Con la agenda internacional tendremos una perspectiva del negocio en
-              Latinoamérica</p>
-          </div>
-          <div class="parrafo">
-            <p class="icono" id="icon"><i class="fas fa-project-diagram"></i></p>
-            <p>Conoceremos qué están haciendo las empresas del sector y tendremos la
-              oportunidad de visibilizar nuestras marcas a través de una experiencia
-              de relacionamiento (networking) y cerrar negocios.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="tarifas" id="tarifas1">
-      <p>INSCRIPCIONES</p>
-      <p>¡Vincúlate al congreso de</p>
-      <p>FENDIPETRÓLEO!</p>
+      </section>
+      <section class="tarifas" id="tarifas1">
+        <p>INSCRIPCIONES</p>
+        <p>¡Vincúlate al congreso de</p>
+        <p>FENDIPETRÓLEO!</p>
+      </section>
 
-    </section>
-
-    <section id="tarifas">
-      <div id="table">
-        <table id="tableful">
-          <tr>
-            <th id="th1">Categoria</th>
-            <th id="th2">23, 24 y 25 de Noviembre 2022</th>
-            <th id="th3">Pago</th>
-          </tr>
-          <tr>
-            <td>Afiliados</td>
-            <td>$ 350.000 + iva</td>
-            <td><a href="https://fm33.easytechpro.com/fmi/webd/sucongreso?script=FEDEinicio" target="_blank"><img
-                  src="http://www.payulatam.com/img-secure-2015/boton_pagar_mediano.png"></a></td>
-
-          </tr>
-          <tr>
-            <td>No Afiliados</td>
-            <td>$ 450.000 + iva</td>
-            <td><a href="https://fm33.easytechpro.com/fmi/webd/sucongreso?script=FEDEinicio" target="_blank"><img
-                  src="http://www.payulatam.com/img-secure-2015/boton_pagar_mediano.png"></a></td>
-          </tr>
-          <!-- <tr>
+      <section id="tarifas">
+        <div id="table">
+          <table id="tableful">
+            <tr>
+              <th id="th1">Categoria</th>
+              <th id="th2">23, 24 y 25 de Noviembre 2022</th>
+              <th id="th3">Pago</th>
+            </tr>
+            <tr>
+              <td>Afiliados</td>
+              <td>$ 350.000 + iva</td>
+              <td>
+                <a
+                  href="https://fm33.easytechpro.com/fmi/webd/sucongreso?script=FEDEinicio"
+                  target="_blank"
+                  ><img
+                    src="http://www.payulatam.com/img-secure-2015/boton_pagar_mediano.png"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>No Afiliados</td>
+              <td>$ 450.000 + iva</td>
+              <td>
+                <a
+                  href="https://fm33.easytechpro.com/fmi/webd/sucongreso?script=FEDEinicio"
+                  target="_blank"
+                  ><img
+                    src="http://www.payulatam.com/img-secure-2015/boton_pagar_mediano.png"
+                /></a>
+              </td>
+            </tr>
+            <!-- <tr>
             <td>Internacionales</td>
             <td>US$ 47.60 taxes included</td>
             <td><a href="https://biz.payulatam.com/L0ca711B874DCAF" target="_blank"><img
@@ -229,35 +299,47 @@
             <td id="bancolombia" colspan="3">Para pagos con Bancolombia <a href="./pagobanco.html"
                 target="_blank">Visitanos aquí</a></td>
           </tr> -->
-        </table>
-        <table id="tablares">
-          <tr>
-            <td>Fechas: 23, 24 y 25 de Noviembre de 2022</td>
-          </tr>
-          <tr>
-            <td>CATEGORÍA</td>
-          </tr>
-          <tr>
-            <td>AFILIADOS</td>
-          </tr>
-          <tr>
-            <td>$ 350.000 + iva</td>
-          </tr>
-          <tr>
-            <td><a href="https://fm33.easytechpro.com/fmi/webd/sucongreso?script=FEDEinicio" target="_blank"><img
-                  src="http://www.payulatam.com/img-secure-2015/boton_pagar_mediano.png"></a></td>
-          </tr>
-          <tr>
-            <td>NO AFILIADOS</td>
-          </tr>
-          <tr>
-            <td>$ 450.000 + iva</td>
-          </tr>
-          <tr>
-            <td><a href="https://fm33.easytechpro.com/fmi/webd/sucongreso?script=FEDEinicio" target="_blank"><img
-                  src="http://www.payulatam.com/img-secure-2015/boton_pagar_mediano.png"></a></td>
-          </tr>
-          <!--  <tr>
+          </table>
+          <table id="tablares">
+            <tr>
+              <td>Fechas: 23, 24 y 25 de Noviembre de 2022</td>
+            </tr>
+            <tr>
+              <td>CATEGORÍA</td>
+            </tr>
+            <tr>
+              <td>AFILIADOS</td>
+            </tr>
+            <tr>
+              <td>$ 350.000 + iva</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://fm33.easytechpro.com/fmi/webd/sucongreso?script=FEDEinicio"
+                  target="_blank"
+                  ><img
+                    src="http://www.payulatam.com/img-secure-2015/boton_pagar_mediano.png"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>NO AFILIADOS</td>
+            </tr>
+            <tr>
+              <td>$ 450.000 + iva</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://fm33.easytechpro.com/fmi/webd/sucongreso?script=FEDEinicio"
+                  target="_blank"
+                  ><img
+                    src="http://www.payulatam.com/img-secure-2015/boton_pagar_mediano.png"
+                /></a>
+              </td>
+            </tr>
+            <!--  <tr>
             <td>INTERNACIONALES</td>
           </tr>
           <tr>
@@ -275,47 +357,66 @@
               <a href="./pagobanco.html" target="_blank">Visitanos aquí</a>
             </td>
           </tr> -->
-        </table>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer" id="footer">
+        <article class="logofooter">
+          <img src="./src/img/logos/Logo-36-Congresobl.png" alt="" />
+        </article>
+        <article class="contacto">
+          <h3>Claudia Zuluaga</h3>
+          <p>Coordinadora Congreso</p>
+          <a href="mailto:vicepresidenciasostenibilidad@fendipetroleo.com"
+            >vicepresidenciasostenibilidad@fendipetroleo.com</a
+          >
+          <a href="mailto:vicepresidenciasostenibilidad@fendipetroleo.com"
+            >email</a
+          >
+          <p>Call center (1) 2415539</p>
+          <p>Celular 300 611 4290</p>
+        </article>
+        <article class="contacto">
+          <h3>Cristian Chiquillo Reyes</h3>
+          <p>Director Comercial</p>
+          <a href="cristian.chiquillo@contactos.com.co "
+            >cristian.chiquillo@contactos.com.co</a
+          >
+          <a href="cristian.chiquillo@contactos.com.co ">email</a>
+          <p>Call center (1) 2415539</p>
+          <p>Celular 314 527 4218</p>
+        </article>
+        <article class="redes">
+          <h3>Siguenos</h3>
+          <a
+            href="https://www.facebook.com/CongresoFendipetroleo"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/congresofendi" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/congresofendipetroleo"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </article>
       </div>
-    </section>
-  </main>
-  <footer>
-    <div class="footer" id="footer">
-      <article class="logofooter">
-        <img src="./src/img/logos/Logo-36-Congresobl.png" alt="">
-      </article>
-      <article class="contacto">
-        <h3>Claudia Zuluaga</h3>
-        <p>Coordinadora Congreso</p>
-        <a
-          href="mailto:vicepresidenciasostenibilidad@fendipetroleo.com">vicepresidenciasostenibilidad@fendipetroleo.com</a>
-        <a href="mailto:vicepresidenciasostenibilidad@fendipetroleo.com">email</a>
-        <p>Call center (1) 2415539</p>
-        <p>Celular 300 611 4290</p>
-      </article>
-      <article class="contacto">
-        <h3>Cristian Chiquillo Reyes</h3>
-        <p>Director Comercial</p>
-        <a href="cristian.chiquillo@contactos.com.co ">cristian.chiquillo@contactos.com.co</a>
-        <a href="cristian.chiquillo@contactos.com.co ">email</a>
-        <p>Call center (1) 2415539</p>
-        <p>Celular 314 527 4218</p>
-      </article>
-      <article class="redes">
-        <h3>Siguenos</h3>
-        <a href="https://www.facebook.com/CongresoFendipetroleo" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/congresofendi" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/congresofendipetroleo" target="_blank"><i class="fab fa-instagram"></i></a>
-      </article>
-    </div>
-    <div class="copy">
-      <p>36 Congreso Nacional de Distribuidores de Combustibles y Energéticos &copy; 2022</p>
-    </div>
+      <div class="copy">
+        <p>
+          36 Congreso Nacional de Distribuidores de Combustibles y Energéticos
+          &copy; 2022
+        </p>
+      </div>
+    </footer>
 
-  </footer>
-
-  <script src="./src/js/index_dom.js "></script>
-  <script src="https://kit.fontawesome.com/4bd75be6cc.js" crossorigin="anonymous"></script>
-</body>
-
+    <script src="./src/js/index_dom.js "></script>
+    <script
+      src="https://kit.fontawesome.com/4bd75be6cc.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

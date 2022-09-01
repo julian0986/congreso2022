@@ -1,0 +1,62 @@
+.slider2 {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+
+    background-color: $color4o;
+    ul {
+      padding: 0;
+      display: flex;
+      width: 200%;
+      animation: change 3s infinite;
+      animation-direction: alternate;
+      
+      
+      li {
+        width: 100%;
+        list-style: none;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @keyframes change {
+    0% {
+      margin-left: 0;
+    }
+    52% {
+      margin-left: 0;
+    }
+    58% {
+      margin-left: -100%;
+    }
+    100% {
+      margin-left: -100%;
+    }
+   
+  }
+  .control {
+    display: block;
+    background-color: $color10;
+  
+    ul {
+      display: flex;
+      justify-content: center;
+  
+      li {
+        padding: 0.5rem;
+        list-style-type: none;
+        i {
+          color: $color0;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .slider {
+      display: block;
+    }
+  }
+  
