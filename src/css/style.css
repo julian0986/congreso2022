@@ -64,6 +64,7 @@ section .infocongreso .imginfo iframe {
     width: 315px;
     height: 200px;
   }
+
   .imgorganiza {
     margin-top: 1rem;
     flex-direction: column;
@@ -79,7 +80,7 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  border-bottom: solid 4px rgb(0, 128, 255);
+  border-bottom: solid 4px #0080ff;
   top: 0;
   z-index: 100;
   position: fixed;
@@ -170,7 +171,7 @@ nav .logo img {
   color: #000;
 }
 .menup ul .dropdown .dropdown-content li p {
-  color: rgb(0, 66, 108);
+  color: #00426c;
   font-size: 16px;
 }
 .menup ul .dropdown:hover .dropdown-content {
@@ -188,7 +189,7 @@ nav .logo img {
 }
 .menup #ingreso :hover {
   background-color: rgba(0, 7, 244, 0.2);
-  border-bottom: solid 3px rgb(0, 128, 255);
+  border-bottom: solid 3px #0080ff;
   border-radius: 8px;
   transition: ease-in-out 0.4s;
   color: #fff;
@@ -228,7 +229,7 @@ nav .logo img {
     width: inherit;
     display: block;
     font-size: 1.5rem;
-    color: rgb(0, 128, 255);
+    color: #0080ff;
     transition: all 0.3s ease;
     border: none;
     font-size: 0.7rem;
@@ -241,7 +242,7 @@ nav .logo img {
   }
   nav .menup .mostrarham li :hover {
     font-weight: bold;
-    color: rgb(0, 7, 244);
+    color: #0007f4;
     background-color: #fff;
   }
   nav .menup .dropdown .dropdown-content {
@@ -358,6 +359,7 @@ section .infocongreso .imginfo iframe {
     width: 315px;
     height: 200px;
   }
+
   .imgorganiza {
     margin-top: 1rem;
     flex-direction: column;
@@ -371,7 +373,7 @@ section .infocongreso .imginfo iframe {
 }
 .footer {
   display: flex;
-  background-color: rgb(0, 66, 108);
+  background-color: #00426c;
   padding: 0.5rem;
   padding-left: 1rem;
 }
@@ -418,11 +420,11 @@ section .infocongreso .imginfo iframe {
   padding-top: 0.7rem;
 }
 .footer .redes a :hover {
-  color: rgb(113, 255, 244);
+  color: #71fff4;
 }
 
 .copy {
-  background-color: rgb(0, 128, 255);
+  background-color: #0080ff;
   font-size: 0.8rem;
   font-family: "Varela Round", sans-serif;
   text-align: center;
@@ -503,7 +505,7 @@ section .contenidomot .parrafo {
 }
 section .contenidomot .parrafo .icono {
   font-size: 2.5rem;
-  color: rgb(0, 66, 108);
+  color: #00426c;
   padding: 0.8rem;
   box-shadow: 0px 0px 5px 1px black;
   border-radius: 10px;
@@ -597,7 +599,7 @@ section .contenidomot .parrafo p .has {
 }
 .control {
   display: block;
-  background-color: rgb(0, 66, 108);
+  background-color: #00426c;
 }
 .control ul {
   display: flex;
@@ -621,7 +623,7 @@ section .contenidomot .parrafo p .has {
   grid-template-columns: repeat(17, 1fr);
   grid-template-rows: repeat(3, 1fr);
   font-family: "Varela Round", sans-serif;
-  background-color: rgb(0, 128, 255);
+  background-color: #0080ff;
   color: white;
   padding-top: 3rem;
 }
@@ -644,7 +646,7 @@ section .contenidomot .parrafo p .has {
 }
 
 #tarifas {
-  background-color: rgb(0, 128, 255);
+  background-color: #0080ff;
   padding: 4rem;
 }
 #tarifas #tablares {
@@ -685,7 +687,7 @@ section .contenidomot .parrafo p .has {
 }
 #tarifas table th {
   border-collapse: collapse;
-  background-color: rgb(22, 41, 255);
+  background-color: #1629ff;
   color: #fff;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -699,15 +701,15 @@ section .contenidomot .parrafo p .has {
   margin-top: 2rem;
   text-decoration: none;
   font-size: 1rem;
-  border: solid 2px rgb(0, 66, 108);
+  border: solid 2px #00426c;
   padding: 0.5rem;
   border-radius: 15px;
-  background-color: rgb(0, 66, 108);
+  background-color: #00426c;
   color: #fff;
 }
 #tarifas table #bancolombia a:hover {
   background-color: #fff;
-  color: rgb(0, 66, 108);
+  color: #00426c;
   transition: ease-in-out 0.5s;
 }
 
@@ -731,6 +733,7 @@ section .contenidomot .parrafo p .has {
     font-size: 1.6rem;
     text-align: center;
   }
+
   #tarifas {
     padding: 0;
   }
@@ -760,19 +763,20 @@ section .contenidomot .parrafo p .has {
     font-size: 1rem;
     padding-left: 0.7rem;
   }
+
   #btnbancolombia a {
     margin-top: 1rem;
     text-decoration: none;
     font-size: 1rem;
-    border: solid 2px rgb(0, 66, 108);
+    border: solid 2px #00426c;
     padding: 0.5rem;
     border-radius: 15px;
-    background-color: rgb(0, 66, 108);
+    background-color: #00426c;
     color: #fff;
   }
   #btnbancolombia a:hover {
     background-color: #fff;
-    color: rgb(0, 66, 108);
+    color: #00426c;
     transition: ease-in-out 0.5s;
   }
 }
@@ -807,7 +811,7 @@ section .contenidomot .parrafo p .has {
   padding-right: 10px;
 }
 #inscripcion .inscripcion a:hover {
-  background-color: rgb(0, 63, 103);
+  background-color: #003f67;
   color: #fff;
 }
 
@@ -830,12 +834,12 @@ section .contenidomot .parrafo p .has {
   }
   #inscripcion .inscripcion a {
     text-decoration: none;
-    background-color: rgb(0, 63, 103);
+    background-color: #003f67;
     align-self: center;
     color: #fff;
     font-size: 1rem;
     font-family: "Varela Round", sans-serif;
-    border: solid 0.3rem rgb(0, 63, 103);
+    border: solid 0.3rem #003f67;
     border-radius: 2rem;
   }
   #inscripcion .inscripcion a i {
@@ -855,15 +859,15 @@ section .contenidomot .parrafo p .has {
   margin-top: 2rem;
   text-decoration: none;
   font-size: 1rem;
-  border: solid 2px rgb(0, 66, 108);
+  border: solid 2px #00426c;
   padding: 0.5rem;
   border-radius: 15px;
-  background-color: rgb(0, 66, 108);
+  background-color: #00426c;
   color: #fff;
 }
 #btndescargas a:hover {
   background-color: #fff;
-  color: rgb(0, 66, 108);
+  color: #00426c;
   transition: ease-in-out 0.5s;
 }
 
@@ -879,7 +883,7 @@ section .contenidomot .parrafo p .has {
 }
 
 #tarifas {
-  background-color: rgb(0, 128, 255);
+  background-color: #0080ff;
   padding: 4rem;
 }
 #tarifas #tablares {
@@ -914,7 +918,7 @@ section .contenidomot .parrafo p .has {
 }
 #tarifas table th {
   border-collapse: collapse;
-  background-color: rgb(22, 41, 255);
+  background-color: #1629ff;
   color: #fff;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -936,6 +940,7 @@ section .contenidomot .parrafo p .has {
     padding-left: 10px;
     padding-right: 10px;
   }
+
   #tarifas {
     padding: 0;
   }
@@ -1006,7 +1011,7 @@ section .contenidomot .parrafo p .has {
 }
 .control {
   display: block;
-  background-color: rgb(0, 66, 108);
+  background-color: #00426c;
 }
 .control ul {
   display: flex;
