@@ -7,8 +7,8 @@
     ul {
       padding: 0;
       display: flex;
-      width: 300%;
-      animation: change 3s infinite;
+      width: 400%;
+      animation: change 5s infinite;
       animation-direction: alternate;
       
       
@@ -25,20 +25,27 @@
     0% {
       margin-left: 0;
     }
-    29% {
+    20% {
       margin-left: 0;
     }
-    35% {
+    25% {
       margin-left: -100%;
     }
-    64% {
+    45% {
       margin-left: -100%;
+    }
+    50% {
+      margin-left: -200%;
     }
     70% {
       margin-left: -200%;
     }
+
+    75% {
+      margin-left: -300%;
+    }
     100% {
-      margin-left: -200%;
+      margin-left: -300%;
     }
    
   }
