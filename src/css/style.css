@@ -558,8 +558,8 @@ section .contenidomot .parrafo p .has {
 .slider ul {
   padding: 0;
   display: flex;
-  width: 400%;
-  animation: change 12s infinite;
+  width: 300%;
+  animation: slider 8s infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out 0.2s;
 }
@@ -571,30 +571,24 @@ section .contenidomot .parrafo p .has {
   width: 100%;
 }
 
-@keyframes change {
+@keyframes slider {
   0% {
     margin-left: 0;
   }
-  20% {
+  30% {
     margin-left: 0;
   }
-  25% {
+  35% {
     margin-left: -100%;
   }
-  45% {
+  65% {
     margin-left: -100%;
-  }
-  50% {
-    margin-left: -200%;
   }
   70% {
     margin-left: -200%;
   }
-  75% {
-    margin-left: -300%;
-  }
   100% {
-    margin-left: -300%;
+    margin-left: -200%;
   }
 }
 .control {
@@ -978,7 +972,7 @@ section .contenidomot .parrafo p .has {
   padding: 0;
   display: flex;
   width: 400%;
-  animation: change 5s infinite;
+  animation: change 10s infinite;
   animation-direction: alternate;
 }
 .slider2 ul li {
@@ -999,16 +993,16 @@ section .contenidomot .parrafo p .has {
   25% {
     margin-left: -100%;
   }
-  45% {
+  50% {
     margin-left: -100%;
   }
-  50% {
-    margin-left: -200%;
-  }
-  70% {
+  55% {
     margin-left: -200%;
   }
   75% {
+    margin-left: -200%;
+  }
+  80% {
     margin-left: -300%;
   }
   100% {

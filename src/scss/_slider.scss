@@ -7,8 +7,8 @@
   ul {
     padding: 0;
     display: flex;
-    width: 400%;
-    animation: change 12s infinite;
+    width: 300%;
+    animation: slider 8s infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out 0.2s;
     li {
@@ -20,31 +20,27 @@
     }
   }
 }
-@keyframes change {
+@keyframes slider {
   0% {
     margin-left: 0;
   }
-  20% {
+  30% {
     margin-left: 0;
   }
-  25% {
+  35% {
     margin-left: -100%;
   }
-  45% {
+  65% {
     margin-left: -100%;
-  }
-  50% {
-    margin-left: -200%;
   }
   70% {
     margin-left: -200%;
   }
-  75% {
-    margin-left: -300%;
-  }
+ 
   100% {
-    margin-left: -300%;
+    margin-left: -200%;
   }
+ 
 }
 .control {
   display: block;
