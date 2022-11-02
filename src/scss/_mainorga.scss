@@ -44,7 +44,7 @@ section {
 }
 @media screen and (max-width: 1024px) {
   .organizador {
-    padding-top: 1rem;
+    padding-top: 0;
     justify-items: center;
     width: 100%;
     height: auto;
@@ -72,7 +72,7 @@ section {
     }
   }
   .imgorganiza {
-    margin-top: 1rem;
+    margin-top: 0;
     flex-direction: column;
     align-items: center;
 
