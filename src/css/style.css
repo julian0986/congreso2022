@@ -971,7 +971,7 @@ section .contenidomot .parrafo p .has {
 .slider2 ul {
   padding: 0;
   display: flex;
-  width: 300%;
+  width: 400%;
   animation: change 10s infinite;
   animation-direction: alternate;
 }
@@ -987,20 +987,26 @@ section .contenidomot .parrafo p .has {
   0% {
     margin-left: 0;
   }
-  29% {
+  20% {
     margin-left: 0;
   }
-  35% {
+  25% {
     margin-left: -100%;
   }
-  64% {
+  50% {
     margin-left: -100%;
+  }
+  55% {
+    margin-left: -200%;
   }
   70% {
     margin-left: -200%;
   }
+  75% {
+    margin-left: -300%;
+  }
   100% {
-    margin-left: -200%;
+    margin-left: -300%;
   }
 }
 .control {
@@ -1040,7 +1046,7 @@ section .contenidomot .parrafo p .has {
   height: 300px;
   border-radius: 40px !important;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.1s;
 }
 .card .card_image {
   width: inherit;
