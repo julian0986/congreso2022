@@ -139,50 +139,50 @@ nav {
 @media screen and (max-width: 1024px) {
   nav {
     label {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      cursor: pointer;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      cursor: pointer !important;
     }
 
     .logo {
-      text-align: center;
+      text-align: center !important;
 
       img {
-        width: 30vh;
-        height: auto;
-        padding: 0;
+        width: 30vh !important;
+        height: auto !important;
+        padding: 0 !important;
       }
     }
 
-    flex-direction: column;
+    flex-direction: column !important;
 
     .menup {
-      width: 100%;
-      max-height: 0;
-      overflow: hidden;
-      padding: 0;
+      width: 100% !important;
+      max-height: 0 !important;
+      overflow: hidden !important;
+      padding: 0 !important;
 
       .mostrarham {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 0 !important;
 
         li {
-          padding: 0.5rem;
-          width: inherit;
-          display: block;
-          font-size: 1.5rem;
-          color: $color2;
-          transition: all 0.3s ease;
-          border: none;
-          font-size: 0.7rem;
+          padding: 0.5rem !important;
+          width: inherit !important;
+          display: block !important;
+          font-size: 1.5rem !important;
+          color: $color2 !important;
+          transition: all 0.3s ease !important;
+          border: none !important;
+          font-size: 0.7rem !important;
 
           a {
-            font-size: 0.7rem;
+            font-size: 0.7rem !important;
           }
           p {
-            margin-top: 1rem;
+            margin-top: 1rem !important;
           }
 
           :hover {

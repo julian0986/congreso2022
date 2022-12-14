@@ -197,48 +197,48 @@ nav .logo img {
 
 @media screen and (max-width: 1024px) {
   nav {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   nav label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    cursor: pointer !important;
   }
   nav .logo {
-    text-align: center;
+    text-align: center !important;
   }
   nav .logo img {
-    width: 30vh;
-    height: auto;
-    padding: 0;
+    width: 30vh !important;
+    height: auto !important;
+    padding: 0 !important;
   }
   nav .menup {
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0;
+    width: 100% !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
   }
   nav .menup .mostrarham {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 0 !important;
   }
   nav .menup .mostrarham li {
-    padding: 0.5rem;
-    width: inherit;
-    display: block;
-    font-size: 1.5rem;
-    color: #0080ff;
-    transition: all 0.3s ease;
-    border: none;
-    font-size: 0.7rem;
+    padding: 0.5rem !important;
+    width: inherit !important;
+    display: block !important;
+    font-size: 1.5rem !important;
+    color: #0080ff !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+    font-size: 0.7rem !important;
   }
   nav .menup .mostrarham li a {
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
   }
   nav .menup .mostrarham li p {
-    margin-top: 1rem;
+    margin-top: 1rem !important;
   }
   nav .menup .mostrarham li :hover {
     font-weight: bold;
@@ -1145,5 +1145,273 @@ section .contenidomot .parrafo p .has {
   }
 }
 /* ? ---------------------------- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section h3 {
+  font-family: "Varela Round", sans-serif;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+section .imgorganiza {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 7, 244, 0.2);
+}
+section .imgorganiza img {
+  box-shadow: 0px 0px 30px black;
+}
+section .infocongreso {
+  display: flex;
+}
+section .infocongreso .info {
+  font-family: "Varela Round", sans-serif;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: 20%;
+}
+section .infocongreso .info h2 {
+  font-size: 3rem;
+  padding-left: 3rem;
+}
+section .infocongreso .info p {
+  padding-top: 2rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  padding-left: 6rem;
+  padding-right: 3rem;
+}
+section .infocongreso .imginfo iframe {
+  margin-top: 5rem;
+  padding-right: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .organizador {
+    padding-top: 0;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .organizador .infocongreso {
+    flex-direction: column;
+    align-items: center;
+  }
+  .organizador .infocongreso .info {
+    padding: 0;
+  }
+  .organizador .infocongreso .info p {
+    padding: 0.2rem;
+  }
+  .organizador .infocongreso .imginfo iframe {
+    padding: 0;
+    margin: 1rem 0 1rem 0;
+    width: 315px;
+    height: 200px;
+  }
+
+  .imgorganiza {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgorganiza img {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: solid 4px #0080ff;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+nav #toggler,
+nav label {
+  display: none;
+}
+nav .logo img {
+  height: 14vh;
+  width: auto;
+  padding-top: 1vh;
+  padding-left: 3rem;
+  align-items: center;
+}
+
+.menu_memorias {
+  display: flex;
+  list-style-type: none;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.3rem;
+  padding: 1px 1px 4px 1px;
+  text-align: center;
+  padding-left: 5rem;
+}
+.menu_memorias ul {
+  display: flex;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+.menu_memorias ul li {
+  list-style-type: none;
+  padding: 2vh;
+  padding-top: 4vh;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Varela Round", sans-serif;
+  border-left: solid 0.1rem rgba(35, 63, 75, 0.2);
+  border-radius: 1px 1px 1px 1px;
+  text-align: center;
+}
+.menu_memorias ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.menu_memorias ul :nth-child(5) {
+  border-right: solid 0.1rem #fff;
+}
+.menu_memorias ul li:hover {
+  background-color: rgba(0, 7, 244, 0.2);
+  border-bottom: solid 3px rgba(35, 63, 75, 0.2);
+  border-radius: 8px;
+  transition: ease-in-out 0.4s;
+}
+.menu_memorias ul li:hover a {
+  color: #fff;
+  transition: ease-in-out 0.4s;
+}
+.menu_memorias ul .dropdown {
+  position: relative;
+  display: inline-flex;
+  font-weight: bold;
+}
+.menu_memorias ul .dropdown .dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  min-width: 160px;
+  margin-top: 2rem;
+  margin-left: -40px;
+  z-index: 1;
+}
+.menu_memorias ul .dropdown .dropdown-content :hover {
+  background-color: rgba(0, 7, 244, 0.2);
+}
+.menu_memorias ul .dropdown .dropdown-content li {
+  border: none;
+  background-color: #fff;
+  padding: 0.7rem;
+}
+.menu_memorias ul .dropdown .dropdown-content li a {
+  color: black;
+}
+.menu_memorias ul .dropdown .dropdown-content li a:hover {
+  background: none;
+  color: #000;
+}
+.menu_memorias ul .dropdown .dropdown-content li p {
+  color: #00426c;
+  font-size: 16px;
+}
+.menu_memorias ul .dropdown:hover .dropdown-content {
+  display: block;
+}
+.menu_memorias ul :hover {
+  color: #fff;
+}
+.menu_memorias #ingreso a {
+  text-decoration: none;
+  color: #fff;
+  border: solid 2px #fff;
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+.menu_memorias #ingreso :hover {
+  background-color: rgba(0, 7, 244, 0.2);
+  border-bottom: solid 3px #0080ff;
+  border-radius: 8px;
+  transition: ease-in-out 0.4s;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column !important;
+  }
+  nav label {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    cursor: pointer !important;
+  }
+  nav .logo {
+    text-align: center !important;
+  }
+  nav .logo img {
+    width: 30vh !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+  nav .menup {
+    width: 100% !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+  }
+  nav .menup .mostrarham {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 0 !important;
+  }
+  nav .menup .mostrarham li {
+    padding: 0.5rem !important;
+    width: inherit !important;
+    display: block !important;
+    font-size: 1.5rem !important;
+    color: #0080ff !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+    font-size: 0.7rem !important;
+  }
+  nav .menup .mostrarham li a {
+    font-size: 0.7rem !important;
+  }
+  nav .menup .mostrarham li p {
+    margin-top: 1rem !important;
+  }
+  nav .menup .mostrarham li :hover {
+    font-weight: bold;
+    color: #0007f4;
+    background-color: #fff;
+  }
+  nav .menup .dropdown .dropdown-content {
+    margin-left: 6rem;
+    margin-top: -4rem;
+  }
+  nav .menup .dropdown .turism li {
+    margin-top: 5px;
+    background-color: rgba(0, 7, 244, 0.2);
+    padding: 5px;
+    border-radius: 8px;
+  }
+  nav #toggler:checked ~ .menup {
+    max-height: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

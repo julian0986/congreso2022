@@ -1,0 +1,214 @@
+@import "variables";
+@import "mainorga";
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color0;
+    border-bottom: solid 4px $color2;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+  
+    #toggler,
+    label {
+      display: none;
+    }
+  
+    .logo {
+      img {
+        height: 14vh;
+        width: auto;
+        padding-top: 1vh;
+        padding-left: 3rem;
+        align-items: center;
+      }
+    }
+  }
+  
+  .menu_memorias {
+    display: flex;
+    list-style-type: none;
+    font-family: "Varela Round", sans-serif;
+    font-size: 1.3rem;
+    padding: 1px 1px 4px 1px;
+    text-align: center;
+    padding-left: 5rem;
+  
+    ul {
+      display: flex;
+      padding-top: 1rem;
+  
+      li {
+        list-style-type: none;
+        padding: 2vh;
+        padding-top: 4vh;
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: "Varela Round", sans-serif;
+        border-left: solid 0.1rem $color10o;
+        border-radius: 1px 1px 1px 1px;
+        text-align: center;
+  
+        a {
+          text-decoration: none;
+          color: $color01;
+          font-weight: bold;
+        }
+      }
+      :nth-child(5) {
+        border-right: solid 0.1rem $color0;
+      }
+      li:hover {
+        background-color: $color4o;
+        border-bottom: solid 3px $color10o;
+        border-radius: 8px;
+        transition: ease-in-out 0.4s;
+        a {
+          color: $color0;
+          transition: ease-in-out 0.4s;
+        }
+      }
+  
+      .dropdown {
+        position: relative;
+        display: inline-flex;
+        font-weight: bold;
+  
+        .dropdown-content {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          min-width: 160px;
+          margin-top: 2rem;
+          margin-left: -40px;
+          z-index: 1;
+  
+          :hover {
+            background-color: $color4o;
+          }
+  
+          li {
+            border: none;
+            background-color: $color0;
+            padding: 0.7rem;
+  
+            a {
+              color: black;
+            }
+            a:hover {
+              background: none;
+              color: $color01;
+            }
+            p {
+              color: $color10;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .dropdown:hover {
+        .dropdown-content {
+          display: block;
+        }
+      }
+      cursor: pointer;
+      :hover {
+        color: $color0;
+      }
+    }
+  
+    #ingreso {
+      a {
+        text-decoration: none;
+        color: $color0;
+        border: solid 2px $color0;
+        padding: 0.7rem;
+        border-radius: 10px;
+      }
+      :hover {
+        background-color: $color4o;
+        border-bottom: solid 3px $color2;
+        border-radius: 8px;
+        transition: ease-in-out 0.4s;
+        color: $color0;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    nav {
+      label {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        cursor: pointer !important;
+      }
+  
+      .logo {
+        text-align: center !important;
+  
+        img {
+          width: 30vh !important;
+          height: auto !important;
+          padding: 0 !important;
+        }
+      }
+  
+      flex-direction: column !important;
+  
+      .menup {
+        width: 100% !important;
+        max-height: 0 !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+  
+        .mostrarham {
+          flex-direction: column !important;
+          align-items: flex-start !important;
+          padding: 0 !important;
+  
+          li {
+            padding: 0.5rem !important;
+            width: inherit !important;
+            display: block !important;
+            font-size: 1.5rem !important;
+            color: $color2 !important;
+            transition: all 0.3s ease !important;
+            border: none !important;
+            font-size: 0.7rem !important;
+  
+            a {
+              font-size: 0.7rem !important;
+            }
+            p {
+              margin-top: 1rem !important;
+            }
+  
+            :hover {
+              font-weight: bold;
+              color: $color4;
+              background-color: $color0;
+            }
+          }
+        }
+        .dropdown {
+          .dropdown-content {
+            margin-left: 6rem;
+            margin-top: -4rem;
+          }
+          .turism {
+            li {
+              margin-top: 5px;
+              background-color: $color4o;
+              padding: 5px;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+      #toggler:checked ~ .menup {
+        max-height: 100%;
+      }
+    }
+  }
