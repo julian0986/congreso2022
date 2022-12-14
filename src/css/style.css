@@ -214,31 +214,31 @@ nav .logo img {
     padding: 0 !important;
   }
   nav .menup {
-    width: 100% !important;
-    max-height: 0 !important;
-    overflow: hidden !important;
-    padding: 0 !important;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
   }
   nav .menup .mostrarham {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    padding: 0 !important;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
   }
   nav .menup .mostrarham li {
-    padding: 0.5rem !important;
-    width: inherit !important;
-    display: block !important;
-    font-size: 1.5rem !important;
-    color: #0080ff !important;
-    transition: all 0.3s ease !important;
-    border: none !important;
-    font-size: 0.7rem !important;
+    padding: 0.5rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem t;
+    color: #0080ff;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 0.7rem;
   }
   nav .menup .mostrarham li a {
-    font-size: 0.7rem !important;
+    font-size: 0.7rem t;
   }
   nav .menup .mostrarham li p {
-    margin-top: 1rem !important;
+    margin-top: 1rem;
   }
   nav .menup .mostrarham li :hover {
     font-weight: bold;
@@ -1351,65 +1351,65 @@ nav .logo img {
 
 @media screen and (max-width: 1024px) {
   nav {
-    flex-direction: column !important;
+    flex-direction: column;
   }
   nav label {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    cursor: pointer !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer t;
   }
   nav .logo {
-    text-align: center !important;
+    text-align: center t;
   }
   nav .logo img {
-    width: 30vh !important;
-    height: auto !important;
-    padding: 0 !important;
+    width: 30vh t;
+    height: auto;
+    padding: 0;
   }
-  nav .menup {
-    width: 100% !important;
-    max-height: 0 !important;
-    overflow: hidden !important;
-    padding: 0 !important;
+  nav .menu_memorias {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
   }
-  nav .menup .mostrarham {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    padding: 0 !important;
+  nav .menu_memorias .mostrarham {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
   }
-  nav .menup .mostrarham li {
-    padding: 0.5rem !important;
-    width: inherit !important;
-    display: block !important;
-    font-size: 1.5rem !important;
-    color: #0080ff !important;
-    transition: all 0.3s ease !important;
-    border: none !important;
-    font-size: 0.7rem !important;
+  nav .menu_memorias .mostrarham li {
+    padding: 0.5rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    color: #0080ff;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 0.7rem;
   }
-  nav .menup .mostrarham li a {
-    font-size: 0.7rem !important;
+  nav .menu_memorias .mostrarham li a {
+    font-size: 0.7rem;
   }
-  nav .menup .mostrarham li p {
-    margin-top: 1rem !important;
+  nav .menu_memorias .mostrarham li p {
+    margin-top: 1rem;
   }
-  nav .menup .mostrarham li :hover {
+  nav .menu_memorias .mostrarham li :hover {
     font-weight: bold;
     color: #0007f4;
     background-color: #fff;
   }
-  nav .menup .dropdown .dropdown-content {
+  nav .menu_memorias .dropdown .dropdown-content {
     margin-left: 6rem;
     margin-top: -4rem;
   }
-  nav .menup .dropdown .turism li {
+  nav .menu_memorias .dropdown .turism li {
     margin-top: 5px;
     background-color: rgba(0, 7, 244, 0.2);
     padding: 5px;
     border-radius: 8px;
   }
-  nav #toggler:checked ~ .menup {
+  nav #toggler:checked ~ .menu_memorias {
     max-height: 100%;
   }
 }

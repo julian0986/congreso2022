@@ -158,31 +158,31 @@ nav {
     flex-direction: column !important;
 
     .menup {
-      width: 100% !important;
-      max-height: 0 !important;
-      overflow: hidden !important;
-      padding: 0 !important;
+      width: 100% ;
+      max-height: 0 ;
+      overflow: hidden ;
+      padding: 0 ;
 
       .mostrarham {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        padding: 0 !important;
+        flex-direction: column ;
+        align-items: flex-start ;
+        padding: 0 ;
 
         li {
-          padding: 0.5rem !important;
-          width: inherit !important;
-          display: block !important;
-          font-size: 1.5rem !important;
-          color: $color2 !important;
-          transition: all 0.3s ease !important;
-          border: none !important;
-          font-size: 0.7rem !important;
+          padding: 0.5rem ;
+          width: inherit ;
+          display: block ;
+          font-size: 1.5rem t;
+          color: $color2 ;
+          transition: all 0.3s ease ;
+          border: none ;
+          font-size: 0.7rem ;
 
           a {
-            font-size: 0.7rem !important;
+            font-size: 0.7rem t;
           }
           p {
-            margin-top: 1rem !important;
+            margin-top: 1rem ;
           }
 
           :hover {
